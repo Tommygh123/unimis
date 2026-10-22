@@ -1,0 +1,4570 @@
+{
+  "version": 148,
+  "source_institution_id": "575ef4c3-5fe9-4d89-84d6-43eb9a4dd9b7",
+  "test_institution_id": "bf51a84f-2745-5986-99df-96e34b584049",
+  "test_name": "UniMIS Demonstration & Training - 148",
+  "users": [
+    {
+      "email": "e2e117.authority@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "owner",
+      "user_id": "4b1eb0b7-2ccb-5a72-a68d-584c1d1e37f1",
+      "name": "School Authority"
+    },
+    {
+      "email": "e2e117.admin@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "admin",
+      "user_id": "24bc4819-1031-55d3-bf19-be7a05caa8db",
+      "name": "School Administrator"
+    },
+    {
+      "email": "e2e117.registrar@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "registrar",
+      "user_id": "0a8bd35d-9e90-5fb4-9249-b583d4247c35",
+      "name": "Academic Registrar"
+    },
+    {
+      "email": "e2e117.lecturer@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "lecturer",
+      "user_id": "72c99ad1-8254-555b-8c88-8c0256623b78",
+      "name": "Ama Lecturer"
+    },
+    {
+      "email": "e2e117.reviewer@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "exam_officer",
+      "user_id": "85571e08-11c0-52f5-8892-bf644033e4ee",
+      "name": "Results Reviewer"
+    },
+    {
+      "email": "e2e117.accountant@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "finance_officer",
+      "user_id": "e36e3a17-f115-59e2-885f-364d3028a49d",
+      "name": "Finance Accountant"
+    },
+    {
+      "email": "e2e117.auditor@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "auditor",
+      "user_id": "6a2c4dba-7e56-52a1-87aa-13c1e3bf471c",
+      "name": "Independent Auditor"
+    },
+    {
+      "email": "e2e117.hr@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "hr_officer",
+      "user_id": "b9458a0e-6de6-5d20-a492-0595d1df71e0",
+      "name": "Human Resources"
+    },
+    {
+      "email": "e2e117.applicant1@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "applicant",
+      "user_id": "2e840973-4db1-5f27-8d9b-c2663e326794",
+      "name": "Akosua Mensah"
+    },
+    {
+      "email": "e2e117.applicant2@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "applicant",
+      "user_id": "ee504f33-b790-521b-bc21-f2026b8fa6ec",
+      "name": "Kwame Asare"
+    },
+    {
+      "email": "e2e117.applicant3@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "applicant",
+      "user_id": "d83a6646-d331-5626-938b-b87940e4760b",
+      "name": "Afua Owusu"
+    },
+    {
+      "email": "e2e117.applicant4@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "applicant",
+      "user_id": "e7b93a4d-760e-55e6-9b26-a590789c4e6d",
+      "name": "Kofi Boateng"
+    },
+    {
+      "email": "e2e117.applicant5@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "applicant",
+      "user_id": "670ae9bb-a300-5724-b87c-01c25c5daae3",
+      "name": "Abena Addo"
+    },
+    {
+      "email": "e2e117.l200-1@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "44f3e802-34c1-579a-b7a5-ecee64a3ed08",
+      "name": "Akosua Mensah L200"
+    },
+    {
+      "email": "e2e117.l200-2@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "6811fa48-dba4-5062-8cd9-0affd5bceac0",
+      "name": "Kwame Asare L200"
+    },
+    {
+      "email": "e2e117.l200-3@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "3db966be-f8d1-54dc-b180-bed3a2981253",
+      "name": "Afua Owusu L200"
+    },
+    {
+      "email": "e2e117.l200-4@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "c38dc1c0-d3ff-5f03-a222-59b90ecc5e77",
+      "name": "Kofi Boateng L200"
+    },
+    {
+      "email": "e2e117.l200-5@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "098aeaa8-4f1b-51a4-8385-777861ad022c",
+      "name": "Abena Addo L200"
+    },
+    {
+      "email": "e2e117.l300-1@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "50b7f2ea-dfe0-5360-b89e-cba4f44ef245",
+      "name": "Akosua Mensah L300"
+    },
+    {
+      "email": "e2e117.l300-2@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "2dc0ea18-edf4-53ea-b124-6411d2b9b142",
+      "name": "Kwame Asare L300"
+    },
+    {
+      "email": "e2e117.l300-3@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "b526e9ca-c619-5c76-93bc-d52e5edf7f31",
+      "name": "Afua Owusu L300"
+    },
+    {
+      "email": "e2e117.l300-4@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "f4616a11-94f5-564f-89d0-81e027a72d3e",
+      "name": "Kofi Boateng L300"
+    },
+    {
+      "email": "e2e117.l300-5@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "1d03197f-fec8-572b-82fe-48fa46e7ebd1",
+      "name": "Abena Addo L300"
+    },
+    {
+      "email": "e2e117.l400-1@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "fa9094bf-a931-5b2c-83a9-642c1211418a",
+      "name": "Akosua Mensah L400"
+    },
+    {
+      "email": "e2e117.l400-2@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "5d3ef3ca-8554-5a19-a500-abf2521abd77",
+      "name": "Akosua Mensah L400"
+    },
+    {
+      "email": "e2e117.graduate@unimis.test",
+      "password": "UniMIS117!Test",
+      "role": "student",
+      "user_id": "db934a55-b23e-5f5c-9338-55221c418185",
+      "name": "Akosua Mensah Graduate"
+    }
+  ],
+  "students": [
+    {
+      "label": "l200-1",
+      "student_id": "fd6ea9e1-0b42-55e5-a747-80566b57fba0",
+      "enrolment_id": "7b665dc8-deed-5cba-90d2-1f7f351294cd",
+      "programme_id": "2143c0a5-b541-5da5-97fe-bfd40071f3fa",
+      "level": 200,
+      "trail": false,
+      "historical_results": 4,
+      "attempted_credits": 12,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l200-2",
+      "student_id": "3b37c09c-b246-52d6-96ca-5cbaee2ab649",
+      "enrolment_id": "5547439a-aade-577e-a610-62dbaa862335",
+      "programme_id": "cbce4ee1-299a-5450-87e4-9e55927a5f6f",
+      "level": 200,
+      "trail": false,
+      "historical_results": 4,
+      "attempted_credits": 12,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l200-3",
+      "student_id": "4befe71c-b14d-5045-afb8-61a686faf7c7",
+      "enrolment_id": "e640d92f-79b7-5739-acf3-ec68acebc062",
+      "programme_id": "68d21dc3-598c-52f2-807a-30792f76b61e",
+      "level": 200,
+      "trail": false,
+      "historical_results": 4,
+      "attempted_credits": 12,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l200-4",
+      "student_id": "21de8c0e-c695-5dea-9b3f-06c729c4d146",
+      "enrolment_id": "0da1b37e-b8bb-5f4d-9a5b-783993c353fe",
+      "programme_id": "4021a941-8dbf-5dda-9b63-e8af5dffddc0",
+      "level": 200,
+      "trail": false,
+      "historical_results": 4,
+      "attempted_credits": 12,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l200-5",
+      "student_id": "fae3af0c-30a7-5e8d-8d06-6ca9494ef0ae",
+      "enrolment_id": "33d1e211-9498-5f0b-b680-292566973eeb",
+      "programme_id": "d011fdb0-5d09-5455-bd37-c27c897def1f",
+      "level": 200,
+      "trail": true,
+      "historical_results": 4,
+      "attempted_credits": 12,
+      "cgpa": 2.75,
+      "status": "active"
+    },
+    {
+      "label": "l300-1",
+      "student_id": "52036c36-df86-5ca1-a8c4-7f9633d06fc3",
+      "enrolment_id": "2ee2aeaf-c621-5dee-9a28-2c4b87a489e2",
+      "programme_id": "2143c0a5-b541-5da5-97fe-bfd40071f3fa",
+      "level": 300,
+      "trail": false,
+      "historical_results": 8,
+      "attempted_credits": 24,
+      "cgpa": 3.25,
+      "status": "active"
+    },
+    {
+      "label": "l300-2",
+      "student_id": "c0d7ccca-e2a6-545f-92c5-81751e3d4dd8",
+      "enrolment_id": "f8eebc6a-f637-5192-a8b7-f533e06d05bf",
+      "programme_id": "cbce4ee1-299a-5450-87e4-9e55927a5f6f",
+      "level": 300,
+      "trail": false,
+      "historical_results": 8,
+      "attempted_credits": 24,
+      "cgpa": 3.75,
+      "status": "active"
+    },
+    {
+      "label": "l300-3",
+      "student_id": "8ec62ef0-0331-583d-a9d1-ea62e80bc6ae",
+      "enrolment_id": "84d7b318-a02c-59fa-977e-d43d786052bd",
+      "programme_id": "68d21dc3-598c-52f2-807a-30792f76b61e",
+      "level": 300,
+      "trail": false,
+      "historical_results": 8,
+      "attempted_credits": 24,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l300-4",
+      "student_id": "e5c040b4-74c1-59ad-802e-8f6de3e42349",
+      "enrolment_id": "7a5702a2-b7a6-5946-975f-62af5a62cd8a",
+      "programme_id": "4021a941-8dbf-5dda-9b63-e8af5dffddc0",
+      "level": 300,
+      "trail": false,
+      "historical_results": 8,
+      "attempted_credits": 24,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l300-5",
+      "student_id": "9148a44e-3d87-533a-8b42-73b4d491a8f7",
+      "enrolment_id": "e80857b5-f85d-5414-b215-93f68d94d13d",
+      "programme_id": "d011fdb0-5d09-5455-bd37-c27c897def1f",
+      "level": 300,
+      "trail": true,
+      "historical_results": 8,
+      "attempted_credits": 24,
+      "cgpa": 3.125,
+      "status": "active"
+    },
+    {
+      "label": "l400-1",
+      "student_id": "88077e7f-c3c9-5c03-98ab-70316125eec4",
+      "enrolment_id": "81aabe6a-bdb5-5cfd-a52f-ae3b33a5f086",
+      "programme_id": "2143c0a5-b541-5da5-97fe-bfd40071f3fa",
+      "level": 400,
+      "trail": false,
+      "historical_results": 16,
+      "attempted_credits": 48,
+      "cgpa": 3.5,
+      "status": "active"
+    },
+    {
+      "label": "l400-2",
+      "student_id": "23393a9b-6a53-5659-aa0b-b52218c97cd4",
+      "enrolment_id": "0f026a00-f336-52b7-8f87-f10cd0d76dbb",
+      "programme_id": "2143c0a5-b541-5da5-97fe-bfd40071f3fa",
+      "level": 400,
+      "trail": true,
+      "historical_results": 16,
+      "attempted_credits": 48,
+      "cgpa": 3.313,
+      "status": "active"
+    },
+    {
+      "label": "graduate",
+      "student_id": "9283b767-ead6-59ef-9b82-25bf4cdf5db1",
+      "enrolment_id": "23922c77-482a-5cee-b9ee-5d03a2a23b63",
+      "programme_id": "2143c0a5-b541-5da5-97fe-bfd40071f3fa",
+      "level": 400,
+      "trail": false,
+      "historical_results": 16,
+      "attempted_credits": 48,
+      "cgpa": 3.5,
+      "status": "graduated"
+    }
+  ],
+  "uploads": [
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/740ea81e-086d-5a84-99cb-2133393d6960/e2e117-portrait-1.png",
+      "file": "assets/portrait-1.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/740ea81e-086d-5a84-99cb-2133393d6960/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/740ea81e-086d-5a84-99cb-2133393d6960/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/21df66a5-5abb-5df1-8f40-64a2e1fb2f21/e2e117-portrait-2.png",
+      "file": "assets/portrait-2.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/21df66a5-5abb-5df1-8f40-64a2e1fb2f21/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/21df66a5-5abb-5df1-8f40-64a2e1fb2f21/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/59df6f14-127f-5a38-a393-448b69691b57/e2e117-portrait-3.png",
+      "file": "assets/portrait-3.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/59df6f14-127f-5a38-a393-448b69691b57/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/59df6f14-127f-5a38-a393-448b69691b57/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/c7ce13cf-3989-5f43-9369-7c31ac14b79f/e2e117-portrait-4.png",
+      "file": "assets/portrait-4.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/c7ce13cf-3989-5f43-9369-7c31ac14b79f/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/c7ce13cf-3989-5f43-9369-7c31ac14b79f/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/1de1153f-0cef-5213-a2c3-389065cace9a/e2e117-portrait-5.png",
+      "file": "assets/portrait-5.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/1de1153f-0cef-5213-a2c3-389065cace9a/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/1de1153f-0cef-5213-a2c3-389065cace9a/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/5e602ad8-d588-576e-912b-beb53fde0a75/e2e117-portrait-1.png",
+      "file": "assets/portrait-1.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/5e602ad8-d588-576e-912b-beb53fde0a75/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/5e602ad8-d588-576e-912b-beb53fde0a75/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/52682216-b72f-5505-8975-5dfb25790cb3/e2e117-portrait-2.png",
+      "file": "assets/portrait-2.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/52682216-b72f-5505-8975-5dfb25790cb3/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/52682216-b72f-5505-8975-5dfb25790cb3/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/4a4a64e0-8295-5ef9-be63-b5019ac5f195/e2e117-portrait-3.png",
+      "file": "assets/portrait-3.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/4a4a64e0-8295-5ef9-be63-b5019ac5f195/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/4a4a64e0-8295-5ef9-be63-b5019ac5f195/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/286f19d1-f36a-574b-9765-7204cadc03d1/e2e117-portrait-4.png",
+      "file": "assets/portrait-4.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/286f19d1-f36a-574b-9765-7204cadc03d1/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/286f19d1-f36a-574b-9765-7204cadc03d1/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/724b33d5-dc8c-5a77-8a86-dc5aa1064006/e2e117-portrait-5.png",
+      "file": "assets/portrait-5.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/724b33d5-dc8c-5a77-8a86-dc5aa1064006/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/724b33d5-dc8c-5a77-8a86-dc5aa1064006/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/f9de6466-e93f-5601-aed4-06b33808f706/e2e117-portrait-1.png",
+      "file": "assets/portrait-1.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/f9de6466-e93f-5601-aed4-06b33808f706/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/f9de6466-e93f-5601-aed4-06b33808f706/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/7118b847-2757-580f-b9b6-4ffff507fe0b/e2e117-portrait-2.png",
+      "file": "assets/portrait-2.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/7118b847-2757-580f-b9b6-4ffff507fe0b/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/7118b847-2757-580f-b9b6-4ffff507fe0b/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/3913ccf6-c5d1-5fe9-893b-5ad579ae0826/e2e117-portrait-3.png",
+      "file": "assets/portrait-3.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/3913ccf6-c5d1-5fe9-893b-5ad579ae0826/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/3913ccf6-c5d1-5fe9-893b-5ad579ae0826/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/5d19e2a8-73a8-53ac-8551-93765a16e495/e2e117-portrait-4.png",
+      "file": "assets/portrait-4.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/5d19e2a8-73a8-53ac-8551-93765a16e495/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/5d19e2a8-73a8-53ac-8551-93765a16e495/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/2e74ff35-5617-5ef0-bdcd-c9f86697048b/e2e117-portrait-5.png",
+      "file": "assets/portrait-5.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/2e74ff35-5617-5ef0-bdcd-c9f86697048b/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/2e74ff35-5617-5ef0-bdcd-c9f86697048b/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/70a2fce8-f637-5cb1-8055-f3836b2464b6/e2e117-portrait-1.png",
+      "file": "assets/portrait-1.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/70a2fce8-f637-5cb1-8055-f3836b2464b6/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/70a2fce8-f637-5cb1-8055-f3836b2464b6/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/208655d9-3860-5b17-8c76-3b8bdf4162f3/e2e117-portrait-1.png",
+      "file": "assets/portrait-1.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/208655d9-3860-5b17-8c76-3b8bdf4162f3/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/208655d9-3860-5b17-8c76-3b8bdf4162f3/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/f682579a-520a-5e28-b0f6-6e801537fc8f/e2e117-portrait-1.png",
+      "file": "assets/portrait-1.png",
+      "mime": "image/png"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/f682579a-520a-5e28-b0f6-6e801537fc8f/e2e117-secondary_school_result.pdf",
+      "file": "assets/secondary_school_result.pdf",
+      "mime": "application/pdf"
+    },
+    {
+      "bucket": "admission-documents",
+      "path": "bf51a84f-2745-5986-99df-96e34b584049/f682579a-520a-5e28-b0f6-6e801537fc8f/e2e117-ghana_card.pdf",
+      "file": "assets/ghana_card.pdf",
+      "mime": "application/pdf"
+    }
+  ],
+  "years": {
+    "2022": "5d9e4f95-5486-5792-9000-04a8f1834126",
+    "2023": "529bf78a-6ba6-56b5-9944-013d3ff2af36",
+    "2024": "36bab14c-e530-55c6-8da1-20becbb7d2d2",
+    "2025": "06c0057b-91c6-5414-84d8-404c27e5091a",
+    "2026": "433163b5-a5f4-519c-80e5-08933b259deb",
+    "2027": "15a3a7c0-d2ba-5795-8911-95617ed6e5c3"
+  },
+  "periods": {
+    "2022-1": "889b6f74-8b69-5dca-9735-104f666b79dd",
+    "2022-2": "989fe95e-cb03-5a77-8783-772a1dc67f1a",
+    "2023-1": "70099b04-a24e-58e6-88c3-9af836116d34",
+    "2023-2": "0349b51d-6e76-524b-9d5c-9327dd1497e8",
+    "2024-1": "bb5ecc71-2d21-5f15-9dc6-3271b65eb3c3",
+    "2024-2": "33678338-685f-5a82-af3d-f2f9fa65caa1",
+    "2025-1": "8638a085-58b1-55c2-94e2-3ca3bfb4cf97",
+    "2025-2": "72ac7b94-3707-5a7a-a3dd-dd312d56587f",
+    "2026-1": "bd43f76d-6b17-5bd9-bf2d-cae21b3a274c",
+    "2026-2": "b51e6dea-243c-5543-b4ac-14ac7f75b812",
+    "2027-1": "8f910d42-e096-5505-a740-c2c37d9249e3",
+    "2027-2": "06179a64-b59d-51b4-8b83-42ef7184c7d7"
+  },
+  "programmes": [
+    {
+      "code": "BSC-CENG",
+      "id": "2143c0a5-b541-5da5-97fe-bfd40071f3fa"
+    },
+    {
+      "code": "BSC-EEE",
+      "id": "cbce4ee1-299a-5450-87e4-9e55927a5f6f"
+    },
+    {
+      "code": "BSC-EE",
+      "id": "68d21dc3-598c-52f2-807a-30792f76b61e"
+    },
+    {
+      "code": "BSC-IT",
+      "id": "4021a941-8dbf-5dda-9b63-e8af5dffddc0"
+    },
+    {
+      "code": "BA-COMM",
+      "id": "d011fdb0-5d09-5455-bd37-c27c897def1f"
+    }
+  ],
+  "offerings": [
+    {
+      "id": "0d49c3e3-4d73-5e2b-bc71-21b6e890d540",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "0d53e436-625b-5bd1-9b3e-a12fb30ff816",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "8a7d14cb-e4a1-5cd6-8529-0003a4ef9d7c",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "6f356c79-842e-5252-ad48-32dd1c51af31",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "56a8c728-a71b-56b7-9b15-61a9981d2a39",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "53e247ac-7e27-57e8-919a-41985b9e4624",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "e8da7a06-9535-52c9-9e77-02f26ec1f071",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "08b9d185-7666-5597-9c8c-97a574facb40",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "cda6b0f7-4ed5-5fbf-b4ed-fc25c753884a",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "45e3145d-c12e-5981-80e1-cdaa28583908",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "c24a5a46-643f-544d-815b-80d4a06cd68f",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "23ab6b73-aee4-5123-80f7-1ee60f5f968a",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "9191693b-11d2-5acd-9ac1-d65dcb9adcc6",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "7aa3898b-ca14-5bc1-950f-10d3a9c64367",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "182c8ea1-eace-5c92-85bb-43af98cbfc0a",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "6c62b65c-86f9-5dea-8968-0fabbfc09e16",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "662728c3-328c-5405-8666-11b6a28fc8d4",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "42df0470-67cb-5d36-800e-36db03a5995f",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "5196369b-101d-5642-be7e-bb8e7c85557a",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "0f8756f3-5b86-5185-9eb0-983ef06c2ef3",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "c250ecb2-2404-5a8e-962f-dd0b590508bf",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "9ffaf8d3-4fb9-5872-a38d-f5dcce9bf41b",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "5642d3bb-cdee-55e9-8283-05cbc1c0ff49",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "557ff38f-2460-5b84-81ba-f7438ffa5f86",
+      "programme_index": 0,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "7bd3760c-2cc7-5229-a73b-4a4abe20d076",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "8fc15405-8da5-5ca4-b05e-bad32f004e44",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "5eb42f3e-774e-5c23-abb1-fdfa5576328f",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "61406f00-2c07-5d26-b0d8-bcac4ea7ea54",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "3da7faba-1ac3-50a2-8ee5-0f288496e0bd",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "6ca98bac-5304-5f42-88af-13fd41a7800b",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "028a4116-b2e8-50e7-9507-dd54c0293abe",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "77faff6d-5a2e-57bf-bffc-2c5f334fb6d7",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "d26349ad-975f-574c-8446-0094256d5651",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "daf002ba-237c-5dce-8c08-7825b0034540",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "c070b713-899f-5483-aa9b-9cef8687fc56",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "3ec2a6c2-c4c1-593f-9d94-b999a41bcb11",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "d6c31288-ee2f-5156-bc14-5f93eaf4c2a4",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "ea7509a1-b065-5baf-bc45-164637bc08bb",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "b15e1501-45f8-56b0-a991-c9d419f44925",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "0f5ad446-7c85-5b52-8103-461eb1e44d9f",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "58de7647-ad1f-558a-9bf2-fb8d164967da",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "1836f82f-4664-5ada-a413-86c1768fe658",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "141f4f7d-d570-5471-8adb-8f4813739bb0",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "ec76bca0-4ab6-5225-9562-eb45b16da385",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "ec98f01e-7f0e-5905-a619-fc366a8ef21f",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "6579803d-3457-5381-acf6-649cb57a7460",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "ef656905-0f20-5ec8-a1b8-fb99e87e6b75",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "2ea413e9-8106-5699-a393-bdd2674296ad",
+      "programme_index": 0,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "67ed6954-df24-592f-b262-0055b2b55cfd",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "ee8e420d-302a-5ef4-aea0-62f46613a062",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "81bf8ad6-6a5e-587d-b0cb-b861ecc8a192",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "98240882-d2bc-55a6-abab-1e27aafa5110",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "44cfb190-76a3-5a5a-8622-5e71e8c537a1",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "ae28c546-4603-51c5-8e81-83807222cd9f",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "c9e84f09-212b-56e5-9d23-8a30759e73cb",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "da12568f-78de-503e-a37b-2479f25226f2",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "7a30fc94-3312-5ea8-a85e-675091d936a7",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "c61e2b94-5ebd-5052-8db3-4d6ca8ad7b3b",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "f09238de-c563-51cc-8900-de2b28b72bcb",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "721779b1-7cdf-5906-8e81-bd513e2ca675",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "ffe00986-1192-5a3e-9be8-d03cb254c160",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "836f9479-84a9-56c1-96c9-f51aea1b9620",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "fed303de-7d88-5b53-a003-7985f0fa7ceb",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "cc7d0f4a-bbcd-515f-b3e0-fc01796805f8",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "9b70b8a2-39e1-5e44-bba6-814b068e507e",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "420dcf08-c0dd-53ad-b947-563306f61878",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "f3ed28bd-d1c7-5d22-a72c-34e7683fa531",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "7f1abebf-0c38-592c-a701-ac3c098f4072",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "860ec9ba-92d3-5395-8612-c806050180c9",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "8a6e96b7-a80b-5905-b498-d51d6ad20d13",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "892759b4-c1e4-5ae8-a6ae-70c0c5c68058",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "f1c0ebeb-3929-5035-9ce6-5be8e3c41ce0",
+      "programme_index": 0,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "97b9da8c-f253-57d2-adee-67c04d90484f",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "4c908290-7bf8-5cf2-96a8-e1e4a52f2292",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "83b08304-8056-50f7-a56b-32442f2a778f",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "9d22d19e-5c80-5f94-a619-3fc7d5cea0f9",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "bdafa7a1-0cfb-59bd-b361-71ab9ad1efaa",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "04b0e81e-de7f-50da-b977-57e06f120565",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "84640511-e46b-5020-b37e-5979239f25bb",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "dc0b7342-7534-540c-ab88-c522fda9213b",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "ef4e5ace-83f4-5bb1-9de0-85351160a046",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "964cacd1-d354-55b0-833a-c7d953469b69",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "4dce2637-7840-5dd6-9022-60fc7e492227",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "446c58e3-db7b-58a6-b7f6-b7ff1008df66",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "3b76ae9b-3158-55a0-82f6-cc9c59d223cd",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "87f5a2e7-855a-5534-8e14-67e942763fa4",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "4c10654a-39d3-5fb3-b5e7-6f805ac9dab2",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "5bd9c74d-81c6-5208-aad9-81ee3ff397cf",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "9ccd8145-cc98-5502-8047-db94720ddeb4",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "85af406f-b8e2-544e-88b6-c9b9166f44b0",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "dc06be91-1773-5d19-9428-ff3b05229644",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "ee71f9e1-7cb8-5fbe-a4b1-51d26ce049a1",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "d8f26858-1d83-57a0-9c39-9930f7badd4b",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "c6684aef-01b0-5ee2-a989-92594bec4e78",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "4455f5b1-0fd3-590c-9ae9-33a15f46c12c",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "fc853611-968d-5da5-ab98-185ef32f2468",
+      "programme_index": 0,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "d8ef7132-3ad7-5d9e-ad25-7ba65f745f79",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "ca65b034-dec3-5427-b127-75c4d1ef8000",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "0716a4ef-03b1-5774-a293-60bed9f59973",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "e3e08900-0bc9-5a13-8bda-1ae53b229380",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "d613d8a7-d842-59f6-bcf8-d58e637889bd",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "737d7d61-0824-51f0-a156-8298d4d40fb4",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "8a39f666-12a2-57d1-91b1-7d877670bed7",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "67306644-64e0-5972-a86c-95e579eb4831",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "7bf68e7c-7b89-5863-a4eb-13f4a32f7495",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "f97564f1-5577-52e8-b85f-06078aef3652",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "7392abc5-5fe6-50a7-89cd-a02a611c1cc8",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "72839beb-3007-53bf-92a0-94553909543d",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "5617a15e-c526-5ac4-81d2-d6ec0e0efe75",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "ad24a20a-1053-59fe-9b4b-04038b648f77",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "b0598979-71e0-5903-8dbc-ea8cde6ea8be",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "9e735d23-b14c-5c40-9eaa-3ed5bef7b8fa",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "abe14c30-001d-5105-887f-b587df6db66d",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "4bad7def-e30f-5925-aab9-d13cf3ba2c7e",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "d426a8d5-d4a3-5fed-98c8-f540cc994ed4",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "073ca769-4e71-5b1c-b154-b67b63c17aef",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "100db92c-7fb2-5cc8-9f05-081bc1e78d0a",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "e2bf518e-4cc4-56e9-997f-04d6bf2db055",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "c8b391b8-93ca-5cf8-bec1-e60979be8662",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "19ba3fbf-9c57-585e-b0b0-c7300d2e0782",
+      "programme_index": 1,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "f6f9eb6f-9901-5ae3-9b39-97227a2f06dc",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "66f46d31-0030-582a-b40b-817a2407ab42",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "7d1ed751-b33e-5c30-bf1e-784de837a005",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "64df7c07-99e2-5b53-ab59-d315313ee90b",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "47781b7e-fcf3-583a-81b0-1362d1e417f3",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "7a3b36fc-52f3-5d76-b6c3-6ad910747304",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "8f0b4288-e0fe-52f2-a839-96f183c3de27",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "a42407d8-a534-5306-b334-002c0f556eb3",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "5fbadbe1-c34c-50ff-a9a3-3995cc98c487",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "fb63dda5-2da7-5458-886e-21ac599d9978",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "ebf91f6d-c440-5a2a-ab4b-7c5bcbea2e54",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "8e298a3d-afa5-5676-b117-ad901997f6fc",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "0461ada1-11fb-5ac7-8fe5-78c46783c903",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "ad83184a-69d3-559c-83a4-97cdbfd00136",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "b7f53a01-0aee-58fd-bf49-cbb6639f64bb",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "16f5e019-2f84-5774-9bce-32246c3f6729",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "261364e8-69a7-5bb5-b5b9-48a80b02f0c7",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "253cc601-87d7-5aca-bc4a-fd2cb3d5850e",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "be0bc74b-b484-54d2-836d-4966b5905add",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "a309a39f-b58d-5c37-ad5c-81cf4ecf369f",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "4e6a14d4-0a74-5642-aad8-d806a46ba7c3",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "356b066f-f89f-5ec4-aa6b-3b8f1908f602",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "3ac9f91d-dceb-5dc9-b0c5-e3a263c8fcc2",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "c4c7662b-711a-5a72-ae1b-7cfd5b90f167",
+      "programme_index": 1,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "6ac9db0e-507e-5699-bd48-d006f29c4127",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "5c721dfa-006c-5901-b27b-0143d2d556bf",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "0f847352-3bed-55b1-b3ed-351690050189",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "31314a21-6195-5ed3-8ec3-f0e08db41b32",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "027b920e-b649-53e9-aad0-be91741f2d61",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "8b4881d7-d803-5f3f-b92b-d512823222c6",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "2839e588-7e52-56f7-9d58-31ad5d09da91",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "d7b51c2b-207d-5c90-b045-b11f2fb4c569",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "1740349e-dab1-59ed-811f-d5a32d7c5944",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "f85e1fb9-ab1c-52d1-a75a-a4c44939e6b1",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "40debe9f-25d7-5f1b-911e-c907fe974e2f",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "4de6f238-9d3d-55d2-8106-5e26f81cb35b",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "3bceb3f3-e9c8-5e14-a641-9a4eda02699c",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "37df10fb-3f5c-5c02-9416-7180663b7b06",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "f091bd6c-d9cc-5115-bbb0-7bb46b0b313c",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "2c6bf996-5f7c-5f38-a6b1-6109cf8fffd3",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "8eba7d0f-162f-5db0-9e2b-355ae8cad12c",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "898770c0-2b34-5664-9e2f-0579be9af451",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "c927f64f-db6b-5e3d-a5d2-89f252168906",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "f7c6e926-43be-5480-9448-0e0ba28a4fda",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "0d70c6f1-48cb-5e3f-9110-8bbb004abff2",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "3fb454b8-bf74-5250-9c74-bb06618aef95",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "0a01834b-e67f-5745-95f2-37481331402f",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "6332b7b9-a966-5d35-a286-75b00e5b94a7",
+      "programme_index": 1,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "2a4e9b3a-7003-5d2f-be1d-d6330c2c87ee",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "e1998bb9-a7f7-5371-b6be-cff9c24efc2d",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "bf71a91f-8432-5d85-b5a1-4f08c484eafe",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "2877d793-a9bf-5174-afdd-d618ef9784d1",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "dc65dc8b-dd85-5413-b6cf-edcf7bfe8e7e",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "2833e001-ee8f-5da2-a6b2-432c136e1d63",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "25f8c4f2-6607-5c59-96a6-a167fba396e5",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "c9c7e9b8-f177-5806-955f-859ea360394d",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "9ccaf57b-84b1-5c95-bbaa-4557dee04d49",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "29e9bce8-0e64-5919-98ae-35021e81732f",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "c91a9024-337f-53cf-a795-14763712cf9a",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "bbd819b5-3295-5933-bd29-cb8a6c84ac68",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "4ef3cb06-79e1-5d59-a344-551f3fc94ddc",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "5a0ce570-6c82-55de-ab80-829919ae75ea",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "635edb89-8818-548b-b7c1-209bebb2345e",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "ce42eb11-8819-5430-bef6-cbdaa66f6bd8",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "f4c01242-cf18-5e63-8bc4-997a938496fc",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "dc0323cb-2ea1-5a4b-8735-4da83500d125",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "9d8f32cf-52df-50d9-a071-2f886d6464a4",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "b77dc199-6332-5b12-9696-f2fd2ee01075",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "6f178ec8-944f-5966-aca7-b61aff086dbd",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "5a5a7eba-40be-513a-bb38-e5e66b5bfb93",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "933be117-0a5b-54c5-b7df-66186039529b",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "56a69805-3eda-55a1-b844-06fda1316fb0",
+      "programme_index": 1,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "ad961e81-281b-504a-82f2-cd107eb4c310",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "f0152ea2-acd3-56f0-a0c3-ac95d32dd984",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "008738ed-96e2-549b-9680-e5888b4d2dce",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "c5d2d471-9c71-5626-bc05-e292c9d8a237",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "7a21ffd1-60a3-5768-84e0-d261c51b4b8f",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "e89766e2-550f-5eb8-968b-1c93b16ac9bd",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "dff18ac5-729b-5cda-9019-61edc1645b02",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "0025df82-252c-5e5a-b168-a4af04b58c17",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "39b4e798-a078-5ced-aeb8-7957add092cc",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "6685bddf-46ec-5db5-8451-5d3fa5743638",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "3bc7c1e3-b3e5-5b31-a0cd-1b6dabe8799d",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "20a66318-0e17-542d-934c-9908fa206453",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "afe8e1c9-66cc-5bda-8b3b-84b86ee63d32",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "57368139-17ee-5b5f-bc61-414910a4fb14",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "849be40a-cb72-5bc7-81de-d7c7cbd57dd7",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "49cad2ef-0d88-5f83-93ac-1d4c203ccb06",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "f90e9878-581a-5622-8cba-1c1696f7147f",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "17fbeb20-0f4d-5873-9871-df61032590d3",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "3280c928-011d-56c7-ae45-e1d94340fea8",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "c64b3716-da2a-5f2b-b53e-3ebddb0d035e",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "7d703917-6833-5fc8-bdaa-87d0209f8732",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "13b7cc5b-0b52-51ee-8594-21bdc827286c",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "68aa9191-1fc9-5ebe-bb71-3980733ee0f9",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "4600cff8-7839-57db-9859-d3aa7fef0576",
+      "programme_index": 2,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "edc83ec7-1d73-550f-969f-264e7bcd724e",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "0f3b8cb2-f079-5a36-8435-c4c1f644e14e",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "1e616401-ac43-51aa-a483-03f4b3515375",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "705166ba-b22f-5c6e-bf44-8751d4b98fb0",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "14fdeec8-1348-5995-9eef-da97f3ebbd0f",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "36b3fa85-50cb-5ebb-b276-1957fece1a3b",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "82614f1b-541c-5824-9416-e4a9fe5f2dc0",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "6c2c82e8-8bd4-5c16-b54f-381235b99f86",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "20a2e6bf-e47f-52ba-a61c-2ffc2d50ea00",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "097f05ae-6a27-5835-a05b-6ba4331dce71",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "14ca5de2-8bee-57af-90ea-168b11f11022",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "61bed52f-9fe5-5b34-a3d7-810481443a38",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "f698bad0-e781-5fc0-b2a6-2d04783be4ea",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "9ede9c74-a356-5f50-8872-9f9c8b8faef8",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "b4fffe2e-3bfe-5a14-8a55-545473b9671b",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "69dea1f6-8d31-559a-902e-15b7e21f7ddf",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "dc832321-1c1a-5da2-841a-ea1df77ae885",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "6ea35680-accd-5403-8e89-2d8fe0e107b9",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "6aea5847-27a6-547b-aba3-f5c3f1ac36a6",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "33fc82b6-73c5-52dd-ac1c-866c821e9e4c",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "474ff274-13ab-5cf1-bed8-78bd217db98c",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "29532ca6-b4f6-5f0c-b261-b7849bf4edef",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "83f35df8-7cd7-59b8-8b05-5c2587c6f99c",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "0547fbf2-11fe-5482-b6c1-080b2f00408e",
+      "programme_index": 2,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "0cf79a97-94d8-5e5b-a76e-bfb9ebfd8c71",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "6987d810-dede-5f3b-a35e-ed1d2c317801",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "31f7fb44-97b9-5e82-b4ad-f94dbadcc723",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "1e47ab00-e997-530a-986e-fe24d90deba8",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "ddf450c4-5b44-5115-8d04-c3249d5f893a",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "a84cf8bb-0446-5b5f-b471-c98d26c5419f",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "cd1d8a63-7e6c-5e9e-b975-5a26722d52e1",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "fd80ea5a-6eaa-5235-82fd-dfdccfb50549",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "de416b46-cb9f-589d-b754-76b4151bf8f4",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "a53c6b10-4b88-56ab-bf26-2152136b8741",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "f3a6c61a-0210-5c51-8686-d74c3aaa913a",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "2f5de4ed-6797-5527-b7d3-c152179debc0",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "15e55ba1-8c44-50b8-8005-194a30a8f0c7",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "2fe29523-cb1f-589f-88bc-b25f9023913f",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "3c3b7097-fae4-52a2-8c63-4d55a3089c97",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "1184070f-1d2e-5bde-88e5-3411bc328926",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "c45daaba-1fc8-5a35-a806-e043e47aa8c0",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "fb4a887d-0b50-5d7c-8ad5-af050ab733bb",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "b265be99-bfc3-58f9-ba74-902130708e06",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "52cb168e-b307-5e44-b53b-e48b84ce1df0",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "d450ee07-f684-5a94-8ddf-adf4be9d67b8",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "0a4f1af8-ee9a-56da-abc3-f02b29ad25a7",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "71d2725e-c065-5c38-8e78-ca72cdbbaebd",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "f5efa4c5-a8a8-58be-83e6-02d4d4437515",
+      "programme_index": 2,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "7e1b915b-242c-5237-9e5b-bd18569c004c",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "678b1855-8d8f-54e4-97b5-d6722f080a34",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "08d5bdc3-0c63-5a36-8d58-72470fda7111",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "01b991e5-d704-5a32-bada-c2ae57b514ab",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "05074453-9a71-5922-86ae-1ff280d56ac5",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "1d45c824-2f01-5313-bf2c-4fe7bc433b5f",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "bf181131-e5e7-5ae9-8dd5-d24da02d2691",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "1b2ba882-5f5e-51a5-8e2a-39d1f97e74e2",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "18369b7f-b9c9-5913-b424-055b0aad0222",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "86217d72-a239-56f0-b96c-d01a1da42bfe",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "cfbb579d-f3cc-5ff9-8e6f-ab35a1d00985",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "9befe52b-22f5-5498-ac0c-049848189180",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "8e0ed2b9-1a52-5c7c-9d9a-9fef2f994079",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "90872932-b144-5a3b-b11f-e606d35592b6",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "8f246e75-b2a8-58b6-be69-3a67be10b7f4",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "a114faad-2505-5cfa-ade9-a13c62bac96e",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "8cf967d7-2563-58c9-b9ec-36e359d71262",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "a53adcd2-d36f-5212-8297-9a4742b135a9",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "fcf8932d-ea5f-55b9-8a2a-9aa45b597d2e",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "c8cd646f-d109-5a62-a7c5-f9951819a2bc",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "1c73cb96-0c7c-5097-b0c0-5cd18857a524",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "87bf7a56-71b6-5016-addd-213b9fe2ab0c",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "55027308-5c3d-5e2f-b081-aa8a5efd78ab",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "7d1cbd6a-89cb-559e-954a-867253fbd5db",
+      "programme_index": 2,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "393eefe4-c230-5388-a4b7-4dae4a622d28",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "2f4e12fb-731f-5346-91ef-bd7ed955f678",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "284e51df-8378-5df6-8a91-42b93fd7c4bf",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "7dc8fe87-c04a-5bbb-9dff-40bd9a5532d0",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "df92fb76-4277-5976-99ee-009ce56d2ad3",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "ec07a2f9-d3ba-5012-88be-ba3a2dd110e9",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "e324c887-0a81-5168-8b36-375f609e38d7",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "fe002b69-f6ac-547a-8468-783bf7d80b29",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "1ba71abd-92d6-546e-a9bc-5879cbb495b6",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "b7a49119-a033-5c50-a025-0b65344fbc9e",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "854ca1de-0c35-57fe-bcce-f2bc6b030786",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "2c2d3942-f14c-5247-92a8-9a13b40d2159",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "c1285ac2-9bf7-5a8d-a216-4be63569b8e8",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "e5c62978-999c-5f28-986c-aa376e31c832",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "31392ec0-442c-5a92-9543-3259e88d7c22",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "60b3d2d9-7076-5b55-8b0b-6359f19e7de3",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "c41d3c2c-e848-5595-92d4-4988e3652a46",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "256373cf-ca1e-52d2-93ed-1fc64ff80789",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "6e6dc9ac-526e-5cc2-928c-afc2750c66f9",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "174b61fc-e14e-5d2d-815b-a0a999b911e6",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "b72b01ff-cdde-5fee-aea8-97e36b074959",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "e7e34ece-6299-5881-9920-249b889cd500",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "1cbefe8c-45e4-57e9-a571-3d93b7a6d9f5",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "7ed1e7f1-25c9-590a-becc-302fe1d9c716",
+      "programme_index": 3,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "349027d7-3751-5f75-88f4-b7693d82cecd",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "b4423290-def8-5c3f-98ae-50f9fc7b0fda",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "720a4a87-5d59-5315-8573-ec8446062ce6",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "4b6a7433-365a-559e-878a-2f5901abaad6",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "d1a839fa-66fd-5cd5-9c37-246f184b4f84",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "524c533c-ff53-58ca-b9a2-4901b9c189b4",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "20ec1029-1d3e-51a0-a4fe-ab0b63f10546",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "06d38ec8-8fd1-5db0-9fa3-055f3ff363ec",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "3c4b2b27-9a3e-5da8-908e-e17bf40f06dc",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "73a14132-9e23-50c0-8a4d-c2e8e38df606",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "76313878-8cca-5114-85a6-34133f336877",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "ce34f093-0d99-5d8e-80aa-677d3368304c",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "5e766917-c52b-51d5-ae10-95ecfed3d4ad",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "f9828fd2-a200-5050-a502-728895e2b8a7",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "a64ca486-041c-52f6-9f1d-be8a9c39b9ee",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "890267cb-0307-5934-b3b2-2b5d943f90c5",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "c2b890eb-22ec-5884-9f52-7a53bf3cbe43",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "8a65db87-62f0-5070-aa43-333476764447",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "45fa8ab0-a86f-59be-9bf6-c2d112922544",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "0dc52b00-bbff-500d-afcc-84b5e7f3081c",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "04247d04-5a0f-5f24-88bf-e66d7f9f10f9",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "3124f02a-84e8-567f-9c96-613597210dd4",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "1894de6d-1403-5a0f-afbe-8ce835bb5c22",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "aeb7ba0a-6769-5c63-8f6f-18dba8002eb9",
+      "programme_index": 3,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "85efdc64-d10c-51d5-8fb2-552b3c6e252b",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "ffc32ad4-3490-57b9-9685-f5f747b0f680",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "1c9fe87f-0b55-5864-b05b-68d5d6d25c37",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "91d1880f-238b-51c2-a89a-f348f37fee86",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "788707b7-e536-5949-8fda-e21666345bec",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "c5689d94-a0df-543b-bd6c-9c8fb4dd7215",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "d8084514-5d7e-5216-b777-e3c95a58893a",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "7da9b641-f915-5237-a926-1b4571f722f7",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "2833819d-badd-5b61-bb75-3cea17049cd6",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "6b11df22-ffdc-5a72-9a25-2198626f95e9",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "6be1b6ce-ae8d-5286-a314-0b8aa8f5370f",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "9ccd09e6-90a2-5e03-99a1-17566b9e03ec",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "4be848ef-eda9-55d8-a0c6-4f3a330918c8",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "32c66999-1083-53ec-9bed-e9e3f3474a40",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "8d703f28-c02a-535c-ab81-70c25b9cce04",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "88307c6c-552d-5c87-ae49-811035220300",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "04da6dd4-dabd-52f4-a8ab-0be1ca27388c",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "1add6fb4-60ad-58f3-85e3-0fbe9e9a88fc",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "bdccabf7-e3df-5c5c-b728-6388d907e28d",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "9e4b3b00-1e2d-5f67-8522-9d469bca8b0a",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "f0ff0428-2474-5eaf-b266-a821e56de05b",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "3163faed-bfd0-5e31-8d8c-c2eabc067ec9",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "783ad548-a1e4-5e64-886b-937524b43dca",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "d1621424-5f1b-5cd9-b5be-da57cb57348a",
+      "programme_index": 3,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "4efd07f8-2a8a-5450-932b-112d897040b2",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "851dfdff-c51a-5090-91e0-0536bfbcfd7c",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "83f6d94a-5331-5483-b608-de29e37c3a4b",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "1c1f24b0-53fb-5969-abae-ef1045a6fc63",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "933404cb-139f-5e2b-9aca-662525b70da2",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "365a4de1-ce9b-59fa-9976-45349529e55f",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "eaa6cad6-261e-5a35-90d1-29d5e7cd2287",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "349de656-15a9-5209-bd23-2f7a5a8be697",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "358a640b-4b3b-5d5d-bd76-ce950bdff176",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "5219947f-5bc2-58f7-9815-d4d873cbea83",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "84500040-1da4-57a3-af2f-591350c5c926",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "9176a3b7-33ad-523a-ae91-b108219c2dfb",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "00c4cbdc-6a31-5b8c-a640-fa6ac51d6e9e",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "52f94db5-2354-51d9-980d-28e29b041b76",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "45e2696c-fffd-5804-bda3-ef7b0d09308b",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "e24758c4-77f3-5129-b5e3-a61ba34c8169",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "dfcb6673-c6a0-5c6b-bf03-bb6a050f5043",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "6580ce1f-0949-5df7-b4e5-80246079fdeb",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "6e9f3038-48ab-51d2-84c0-59940ce51949",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "08d34d13-53e3-572c-a7bd-63e1c47c63f1",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "7e3448ba-a049-5db8-854b-b49d8d5116a4",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "df95624c-a18b-5536-aa41-fc0059600523",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "5e76578e-111d-59b2-b18f-ba68bb919921",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "4ace9ac1-16bc-5a5e-9e47-eb7656469d29",
+      "programme_index": 3,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "dcbeb7bb-6851-54e2-8e71-5f915cf1b64b",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "acc1440c-12dc-5b50-a25d-974283245901",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "e27746d6-6ae4-54bb-9b51-c03096d392f3",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "f3c6f889-9e7e-5676-8026-2d9133f3d76e",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "d79cfc88-542b-5217-bf30-b64791680c97",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "68ac8752-2ece-5d85-a6e9-ec0aae2b6f5b",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "dae1a445-da9f-5ed3-b1b5-c0ce62b52dfa",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "fd91632c-de33-5a3e-85ab-97933a13f4ac",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "a6ccff16-d670-5e3c-b4a3-512f6a242b52",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "97eb8335-0e84-53fd-a99c-0cbaad195877",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "4464d2ea-b4a5-56b7-bdf1-dca812c9e1aa",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "ad795ac8-6f31-5740-bec7-7a6ed036a617",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "af69a43a-bf3b-57a7-abf2-d8158c4848f4",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "06c3e791-b121-5320-be69-e51f583c5961",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "b5268305-83f0-5248-856a-fa33af39cdba",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "a76200b6-1b12-54c3-a0c0-daa9e48f1f3e",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "218ac669-6305-51eb-ab0e-f9845c0f41bc",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "da95fa73-348d-56e3-87e9-1a2ab876fe27",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "bc591a5a-ed30-53ff-9068-dcd3f4c0e469",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "ad5e3b59-0007-52b8-8695-02cefdaf5c6f",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "9950c4c1-08a8-5d22-a93b-d07674ac9fa1",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "b00e5787-6201-5eb1-9dd7-a8b34b2caefd",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "c7fcd62d-017a-5cd5-a78e-f6a70c76d468",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "f47e4bf5-8f50-5f6d-a5a0-abffda734017",
+      "programme_index": 4,
+      "level": 100,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "c7e41cb7-bb8a-51cb-ba25-495f7b4a3cd2",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "f66dfbe3-1bb4-5106-aba3-a16d831e88a6",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "cb3ea103-15eb-5a41-9456-56eac51c4fb5",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "c9baf246-3fc9-551d-8abd-590d10e6ac4f",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "170a9bae-1517-5576-920c-24afbc72b583",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "2e99c3fb-2436-5709-a30c-8b68515d70f8",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "48999297-12b2-5a42-b2f5-050b59c3004f",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "d5c5a00d-efe6-588b-a6fa-769c7e739021",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "0a92cf9c-45d1-5771-a6ae-a17998c70ba4",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "12f6b4eb-b3b4-57aa-b71a-fcd714755eb8",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "9e16022b-42fb-5505-b94d-57b977190b49",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "0b2b07b6-24b4-598f-9a36-5874de6da708",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "faa5e9ae-7fd1-5385-a152-bfc239b00fb0",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "08b94c88-6477-5691-bd5a-9b76b24a5516",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "d36598f4-6ab3-563b-ad6d-7ab8714e0545",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "fda84bf7-74c8-58ff-a3ce-6f3742f45e78",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "492d731a-8be8-5478-bab0-3d6984216bf2",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "4e2c8802-1799-5708-868a-0e329ea50195",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "f156835a-89b3-5dd6-bd97-e36f08ca8fe7",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "3ff3f178-3be7-5c94-95db-4df249d1d45d",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "06048bde-3177-5659-96c2-9d3272741dfe",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "a806dd23-98ae-5dc1-83e7-e18b6cb962e5",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "c3e298ce-58a3-562e-89e9-437a71109908",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "a0bba337-44f0-5d6d-a0d1-8cdc47d2e25a",
+      "programme_index": 4,
+      "level": 200,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "778c132c-ae7c-5060-92fa-4871d451dd3b",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "cb294dc4-1fde-5949-9fc8-c3fa258aef5a",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "49c25915-a46c-5009-b807-7fb9532eada6",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "8be1184b-7a06-57f8-9474-fefae5f58298",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "6932257a-ebc5-51e6-9700-7c66fae56630",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "0ce7b7c6-6b1d-5c42-9c25-5628806754ea",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "3440d31f-4fd4-5045-9da4-4fd4a572d7bf",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "d7b1ccc4-c603-55cb-9176-c4d0f4dd1398",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "130707db-71d8-5b55-b2ff-b33a3be72219",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "b967c7c0-d1ad-55a5-a990-e12a0c8e511f",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "86de7a62-99e7-5379-b1e8-0a9e6832c5f7",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "a7edee95-75ac-5444-8cbe-d89688c33068",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "91620a3d-ce07-56cd-ad9b-812378556d61",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "7da35223-b263-519c-8196-f0bedde47207",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "9ea0cbbf-962f-5016-a93c-00a540b1dd7d",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "1348340c-842f-546e-abbe-166cdea94c21",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "cb2f1849-9cc8-5475-b086-1d1399bd56ea",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "f576a7d9-62d4-54c0-9f72-a7db305dbdf7",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "fdaca7ea-5ea1-5b38-becc-6853a37aa316",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "227651c8-ae88-5064-9b92-0befee81b08c",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "10e6de53-f522-50ba-962d-8b3def41e82e",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "ae1792d9-02a4-5389-ac45-a557fdfb7175",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "a8d3b755-c359-544d-a0ff-50895b4f38c1",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "0acd5e13-c067-52cd-b800-fde471c8bbf1",
+      "programme_index": 4,
+      "level": 300,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "8d1e1d41-6f46-5aa8-8b96-1d8c4a1d03f0",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "19d1bfa0-bae9-5ac3-bc73-6962335a8a4e",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "9b947162-2cc2-5059-b217-4cd4d9bbed33",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "1932f2c6-f109-530b-b477-a39cf80cf1df",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "72a08d43-14fb-5c73-95b4-1c7a37dc4ea9",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "fca002a0-973e-524a-9390-55e3975cba69",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "06032034-10aa-560b-ba6b-e255795c0f17",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "48ab48f8-9310-5de1-971c-dee33794921c",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "2f5cef1c-5dcc-5a95-94c0-08c4a68b388c",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "1123057c-d8ee-54be-bdde-d05a2bc54530",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "edd771c7-d2b3-5f82-9261-dad2e1e19c15",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "a0dbe0a1-9036-5ae8-bb66-1b5b3ce83105",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 1,
+      "course_number": 2,
+      "year": 2027
+    },
+    {
+      "id": "169eef9f-709f-5c8d-acf9-9310ee7224fd",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2022
+    },
+    {
+      "id": "898be12c-da6a-5913-b449-9e1ea44d0621",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2023
+    },
+    {
+      "id": "eefa2963-fd5e-5afa-8577-c3d33fc58628",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2024
+    },
+    {
+      "id": "f4200006-b6b8-5b3e-b4ae-0bda165a1ab7",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2025
+    },
+    {
+      "id": "bccb9e99-5d2c-5bf8-9689-28dd69d857b6",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2026
+    },
+    {
+      "id": "ff551f12-ea27-5d71-9593-3d8f6f5e4d65",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 1,
+      "year": 2027
+    },
+    {
+      "id": "cba16325-f486-52ab-99d6-eee0f9a34882",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2022
+    },
+    {
+      "id": "a0b8b684-d6df-522a-92a1-2ae1d114190f",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2023
+    },
+    {
+      "id": "d3511c45-660e-5990-82d8-5ca39bfe2964",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2024
+    },
+    {
+      "id": "273113a4-6a1d-5a95-8025-49380934ef08",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2025
+    },
+    {
+      "id": "13adb289-33c3-50d6-85a7-448d35601c04",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2026
+    },
+    {
+      "id": "2a3e664b-468f-5f60-8fa0-d422d0c4cfe3",
+      "programme_index": 4,
+      "level": 400,
+      "semester": 2,
+      "course_number": 2,
+      "year": 2027
+    }
+  ],
+  "fixture_results": 108,
+  "portrait_prompts": [
+    "Fictional adult Ghanaian passport portrait, grey background, frontal head and shoulders: female blue blouse braided hair; male blue shirt short hair; female cream blouse short hair; male grey shirt glasses; female green blouse tied-back braids. Built-in image generation; shared portraits across cohorts."
+  ],
+  "live_applicant": {
+    "user_id": "557c6e48-4ffe-5c2f-81b5-ab0ad466c185",
+    "applicant_id": "6fffe001-5909-5381-ba88-e3db09d1e742",
+    "email": "demo148.live@unimis.test",
+    "password": "UniMIS148!Demo"
+  }
+}

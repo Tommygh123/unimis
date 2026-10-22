@@ -1,0 +1,4 @@
+export const chartAmount125=value=>Number.isFinite(Number(value))?Math.max(0,Number(value)):0;
+export function gaugeRatio125(value,total){const denominator=chartAmount125(total);if(!denominator)return null;return chartAmount125(value)/denominator*100}
+export function groupReportRows125(rows,keys=[]){if(!keys.length)return [['All records',rows]];const groups=new Map();for(const row of rows){const title=keys.map(key=>String(row[key]??'Not recorded')).join(' • ');if(!groups.has(title))groups.set(title,[]);groups.get(title).push(row)}return [...groups].sort(([a],[b])=>a.localeCompare(b,undefined,{numeric:true}))}
+export function chartSegments125(items){const valid=items.map(x=>({...x,value:chartAmount125(x.value)}));const total=valid.reduce((n,x)=>n+x.value,0);let offset=0;return {total,items:valid.map(x=>{const fraction=total?x.value/total:0;const segment={...x,fraction,offset};offset+=fraction;return segment})}}

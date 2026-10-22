@@ -1,0 +1,38 @@
+# Local secrets and private backups
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.dump
+*.backup
+*.bak
+*.bak.*
+*.zip
+*.tar
+*.tar.gz
+*.key
+*.pem
+backups/
+**/backups/
+recovery154-backups/
+# Generated and machine-specific state
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.log
+*.local
+supabase/.temp/
+supabase/.branches/
+supabase/snippets/
+# Generated demo reports and private training assessments
+/demo/Ready_Report*.json
+/demo/Training_Assessment.csv
+/scripts/PROJECT_ORGANIZED.json
+*.tsbuildinfo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

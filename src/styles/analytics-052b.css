@@ -1,0 +1,23 @@
+
+/* UniMIS 052B — visual results analytics */
+.analytics-panel{background:linear-gradient(180deg,#f8fbff 0%,#ffffff 44%);border:1px solid #dbeafe}
+.analytics-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}
+.analytics-kpi{border-radius:18px;padding:18px;border:1px solid transparent;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+.analytics-kpi span{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.analytics-kpi strong{display:block;font-size:30px;line-height:1;color:#0f172a}
+.analytics-kpi small{display:block;margin-top:8px;color:#475569}
+.analytics-kpi-blue{background:#eff6ff;border-color:#bfdbfe}.analytics-kpi-green{background:#ecfdf5;border-color:#bbf7d0}.analytics-kpi-purple{background:#faf5ff;border-color:#e9d5ff}.analytics-kpi-amber{background:#fffbeb;border-color:#fde68a}
+.analytics-visual-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.75fr);gap:16px;margin-top:16px}.analytics-bottom-grid{grid-template-columns:1fr 1fr}
+.analytics-card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(15,23,42,.04)}
+.analytics-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}.analytics-card-head h3{margin:0;color:#0f3b7a}.analytics-card-head p{margin:4px 0 0;color:#64748b;font-size:13px}.analytics-chip{background:#eff6ff;color:#1d4ed8;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800}
+.analytics-chart-wrap{overflow-x:auto}.analytics-line-chart{width:100%;min-width:520px;height:230px}.chart-grid{stroke:#e2e8f0;stroke-width:1}.chart-line{fill:none;stroke:#2563eb;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.chart-point{fill:#fff;stroke:#2563eb;stroke-width:3}.chart-axis,.chart-label{fill:#64748b;font-size:10px}.chart-value{fill:#1e3a8a;font-size:10px;font-weight:800}
+.grade-bars{display:grid;gap:12px}.grade-bar-head,.compare-label{display:flex;justify-content:space-between;gap:10px;font-size:13px}.grade-bar-head span,.compare-label span{color:#64748b}.grade-bar-track,.compare-track{height:10px;background:#eef2f7;border-radius:999px;overflow:hidden;margin-top:6px}.grade-bar-fill{height:100%;background:linear-gradient(90deg,#3b82f6,#6366f1);border-radius:999px}
+.compare-bars{display:grid;gap:20px}.compare-fill{height:100%;border-radius:999px}.ca-fill{background:linear-gradient(90deg,#0ea5e9,#2563eb)}.exam-fill{background:linear-gradient(90deg,#8b5cf6,#6366f1)}
+.performance-banner{display:grid;gap:6px;border-radius:14px;padding:16px}.performance-banner.good{background:#ecfdf5;border:1px solid #bbf7d0;color:#166534}.performance-banner.fair{background:#fffbeb;border:1px solid #fde68a;color:#92400e}.performance-banner.attention{background:#fff1f2;border:1px solid #fecdd3;color:#9f1239}.performance-banner span{font-size:13px;line-height:1.55}
+.analytics-alert{margin-top:12px;padding:12px 14px;border-radius:12px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;font-size:13px}.analytics-empty{padding:28px 12px;text-align:center;color:#64748b;background:#f8fafc;border-radius:12px}
+@media(max-width:1000px){.analytics-kpi-grid{grid-template-columns:repeat(2,1fr)}.analytics-visual-grid,.analytics-bottom-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.analytics-kpi-grid{grid-template-columns:1fr}.analytics-kpi strong{font-size:26px}}
+
+.trend-baseline{min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:linear-gradient(180deg,#f8fbff,#fff);border:1px dashed #bfdbfe;border-radius:16px}
+.baseline-score{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;background:#eff6ff;border:8px solid #dbeafe;color:#1d4ed8;font-size:24px;font-weight:900;margin-bottom:12px}
+.trend-baseline strong{font-size:17px;color:#0f172a}.trend-baseline span{font-size:12px;color:#475569;margin-top:5px}.trend-baseline p{max-width:520px;color:#64748b;font-size:13px;line-height:1.55;margin:12px 0 0}

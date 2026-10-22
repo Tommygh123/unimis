@@ -1,0 +1,16 @@
+Isolated PostgreSQL-compatible migration/schema and RPC checks; not Windows/GoTrue/Storage network execution.
+
+Migration executions: 162
+PASS demo seed
+PASS source school unchanged
+PASS demo registration: 10 students submitted/approved through real RPCs
+PASS demo billing RPC {"ok":true,"details":[],"skipped":0,"generated":12,"already_invoiced":0}
+PASS demo attendance RPC
+PASS demo current results submitted through Lecturer RPCs
+PASS demo sample receipts and eligible graduation settlement via finance RPC
+PASS demo fixture verification (Storage object metadata simulated in harness)
+PASS repeat seed retains source fingerprint and prepared transactions
+PASS graduation evaluation [{"student_id":"23393a9b-6a53-5659-aa0b-b52218c97cd4","decision":"completion_exception","credits_earned":"45.00","cgpa":"3.313","outstanding_trails":1},{"student_id":"88077e7f-c3c9-5c03-98ab-70316125eec4","decision":"eligible","credits_earned":"48.00","cgpa":"3.500","outstanding_trails":0}]
+PASS demo role permission mappings [{"code":"finance_officer","n":9},{"code":"lecturer","n":16},{"code":"owner","n":74},{"code":"registrar","n":40}]
+PASS source fingerprint unchanged after all workflow actions
+PASS graduation, lecturer and application fee functions retained

@@ -1,0 +1,6 @@
+PASS: modified JSX transformed with esbuild.
+PASS: migration executed in isolated PostgreSQL-compatible PGlite using a minimal schema matching referenced columns.
+PASS: Lecturer denied platform and audit; Platform Operator denied school audit; support denied before approval, self-approval, wrong scope, wrong school and expiry; Auditor denied foreign school and evidence; browser direct platform grant and audit snapshot deletion denied.
+PASS: sample journal, payment, invoice, publication, graduation, application-fee and role-provenance exceptions counted; record evidence and immutable findings saved.
+LIMIT: no connection to the user Windows/Docker database or live browser/hosting; no full existing database migration or production deployment test performed.
+No automatic account grant, school role elevation, operational correction, backup, restore or deployment occurs.

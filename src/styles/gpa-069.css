@@ -1,0 +1,7 @@
+.gpa-history-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:14px 0}.gpa-history-grid article{border:1px solid #dbe5f0;border-radius:12px;padding:12px;background:#f8fbff}.gpa-history-grid span,.gpa-history-grid small{display:block;color:#64748b}.gpa-history-grid span{font-size:11px;font-weight:800}.gpa-history-grid strong{display:block;margin:5px 0;color:#123e78;font-size:18px}
+.academic-summary-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 14px}
+.academic-summary-strip>div{border:1px solid #dbe5f0;border-radius:12px;padding:12px;background:#f8fbff}
+.academic-summary-strip span{display:block;font-size:10px;font-weight:900;text-transform:uppercase;color:#64748b}
+.academic-summary-strip strong{display:block;margin-top:5px;font-size:21px;color:#123e78}
+.cgpa-kpi strong{color:#123e78}
+@media(max-width:760px){.academic-summary-strip{grid-template-columns:repeat(2,1fr)}}

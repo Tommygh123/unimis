@@ -1,0 +1,98 @@
+
+.student-portal-058{background:linear-gradient(135deg,#f3f7fc 0%,#eef5fb 45%,#f7f5fb 100%);min-height:100vh}
+.student-portal-058 .portal-hero{background:linear-gradient(120deg,#edf7ff,#f3f0ff);border:1px solid #d9e6f4;border-radius:16px;padding:20px 22px;box-shadow:0 8px 24px rgba(28,63,101,.06)}
+.portal-kpis-090 article{border:1px solid rgba(25,67,110,.1);box-shadow:0 7px 20px rgba(31,62,94,.06);border-radius:15px}
+.portal-kpis-090 .tone-blue{background:linear-gradient(135deg,#eef7ff,#e5f1ff)}
+.portal-kpis-090 .tone-indigo{background:linear-gradient(135deg,#f0f2ff,#e9edff)}
+.portal-kpis-090 .tone-sky{background:linear-gradient(135deg,#edfbff,#e7f7fb)}
+.portal-kpis-090 .tone-amber{background:linear-gradient(135deg,#fff9e9,#fff3d8)}
+.portal-kpis-090 .tone-violet{background:linear-gradient(135deg,#f6f0ff,#eee5ff)}
+.portal-kpis-090 .tone-green{background:linear-gradient(135deg,#edfff5,#e3f8ed)}
+.graduate-banner-090{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px;margin:16px 0;background:linear-gradient(120deg,#eafaf0,#edf7ff);border:1px solid #bfe6cf;border-radius:16px;box-shadow:0 8px 24px rgba(30,95,62,.07)}
+.graduate-banner-090 h2{margin:4px 0;color:#103d2a}.graduate-banner-090 p{margin:0;color:#4a6472}
+.graduate-status-090{display:flex;gap:8px;align-items:center;background:#dff6e7;color:#13733c;border-radius:999px;padding:10px 15px;font-weight:800;white-space:nowrap}
+.graduate-award-card-090{margin:16px 0;padding:20px;background:linear-gradient(135deg,#eefbf4,#f5fbff);border:1px solid #cbe8d7;border-radius:16px;box-shadow:0 8px 24px rgba(29,70,49,.06)}
+.graduate-award-card-090 .section-title svg{color:#16834a}
+.graduate-detail-grid-090{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.graduate-detail-grid-090>div{background:rgba(255,255,255,.72);border:1px solid #d9e9e1;border-radius:12px;padding:13px}
+.graduate-detail-grid-090 span{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:#58716a;font-weight:700}
+.graduate-detail-grid-090 strong{display:block;margin-top:5px;color:#123a2b}
+.portal-two-090 .management-card{border-radius:16px;box-shadow:0 8px 24px rgba(31,62,94,.05)}
+.registration-card-090{background:linear-gradient(135deg,#f2f8ff,#edf5ff)}
+.results-card-090{background:linear-gradient(135deg,#fbf8ff,#f5f1ff)}
+.historical-note-090{margin:12px 0 0;padding:10px 12px;border-radius:10px;background:#e7f2ff;color:#315f8c;border:1px solid #c9dff5;font-size:.85rem}
+.student-portal-058 .management-card{border-color:#dbe5ef}
+@media(max-width:850px){.graduate-detail-grid-090{grid-template-columns:1fr 1fr}.graduate-banner-090{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.graduate-detail-grid-090{grid-template-columns:1fr}}
+
+.academic-standing-093{margin:16px 0;padding:18px 20px;border-radius:16px;box-shadow:0 8px 24px rgba(31,62,94,.06)}
+.academic-standing-093.standing-warning{background:linear-gradient(135deg,#fff9e9,#fff3dc);border:1px solid #efd69a}
+.academic-standing-093.standing-danger{background:linear-gradient(135deg,#fff3ed,#fff8e8);border:1px solid #efc49f}
+.academic-standing-093 h2{margin:4px 0 6px;color:#6e3c10}.academic-standing-093 p{margin:0;color:#685b50}
+.standing-metrics-093{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.standing-metrics-093 span{background:rgba(255,255,255,.7);padding:9px 12px;border-radius:10px;border:1px solid rgba(120,90,50,.15)}
+.standing-trails-093{display:grid;gap:7px;margin-top:12px}.standing-trails-093 span{background:#fff;padding:10px 12px;border-radius:10px;border:1px solid #eadbc8}
+
+/* 093C — dashboard readability / overflow correction */
+.student-portal-058 .portal-kpis,
+.student-portal-058 .portal-kpis-090{
+  display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(145px,1fr))!important;
+  gap:12px!important;
+  align-items:stretch!important;
+}
+.student-portal-058 .portal-kpis article,
+.student-portal-058 .portal-kpis-090 article{
+  min-width:0!important;
+  width:auto!important;
+  min-height:118px;
+  padding:16px 12px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  overflow:hidden!important;
+}
+.student-portal-058 .portal-kpis article svg{margin:0 auto 7px!important;flex:0 0 auto}
+.student-portal-058 .portal-kpis article span,
+.student-portal-058 .portal-kpis article strong,
+.student-portal-058 .portal-kpis article small{
+  width:100%!important;
+  max-width:100%!important;
+  text-align:center!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  white-space:normal!important;
+  line-height:1.2!important;
+}
+.student-portal-058 .portal-kpis article strong{font-size:1.12rem!important;margin-top:6px!important}
+.student-portal-058 .portal-kpis article small{margin-top:5px!important}
+.academic-standing-093{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  gap:14px 22px!important;
+  align-items:center!important;
+  text-align:left!important;
+}
+.academic-standing-093 h2{font-size:1.35rem!important;margin:4px 0 6px!important}
+.standing-metrics-093{justify-content:flex-end!important;margin:0!important}
+.standing-trails-093{grid-column:1/-1!important;width:100%!important}
+.standing-trails-093 span{
+  display:block!important;
+  text-align:center!important;
+  font-size:.95rem!important;
+  overflow-wrap:anywhere!important;
+}
+.portal-two-090{gap:16px!important}
+.portal-two-090>section{min-width:0!important;overflow:hidden!important}
+@media(max-width:900px){
+ .academic-standing-093{grid-template-columns:1fr!important}
+ .standing-metrics-093{justify-content:flex-start!important}
+}
+@media(max-width:700px){
+ .student-portal-058 .portal-kpis,.student-portal-058 .portal-kpis-090{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:430px){
+ .student-portal-058 .portal-kpis,.student-portal-058 .portal-kpis-090{grid-template-columns:1fr!important}
+}

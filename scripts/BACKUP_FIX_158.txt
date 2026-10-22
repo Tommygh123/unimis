@@ -1,0 +1,21 @@
+Backup checksum repair 158
+
+The original streaming pipeline enumerated checksums.csv while Export-Csv had
+it open for writing. Database, Storage and project copies precede that step.
+
+Backup_Local.ps1 now collects and hashes the file list completely before
+opening the CSV. The manifest itself and completion marker are excluded.
+
+Finalize_Backup.ps1 checks required components, PostgreSQL custom-dump header,
+metadata JSON and readable project ZIP entries before regenerating checksums.
+It does not dump the database again, restore anything, or modify source data.
+A header check is not a full pg_restore test. A complete restore is still needed
+to establish recovery readiness. Keep all backup contents private.
+
+Run against the existing failed backup folder rather than repeating the dump:
+powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\Finalize_Backup.ps1" -BackupPath "C:\UniMIS_Backups\20261022-152108-032"
+
+Both scripts passed PowerShell parsing. Finalization was exercised twice on a
+synthetic filesystem fixture, including a prior partial manifest and hidden
+file; all resulting hashes matched and neither manifest nor marker was hashed.
+Actual Windows Docker backup and database restore were not run here.

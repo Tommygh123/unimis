@@ -1,0 +1,26 @@
+
+.review-queue-card{background:#fff;border:1px solid #dbe5f0;border-radius:18px;padding:22px;margin:18px 0 22px;box-shadow:0 8px 28px rgba(15,23,42,.045)}
+.review-queue-title{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding-bottom:16px;border-bottom:1px solid #edf2f7}
+.review-queue-title>svg{color:#1d4f91;background:#eff6ff;border-radius:12px;padding:9px;width:42px;height:42px}
+.review-queue-title h2{margin:4px 0 5px;font-size:22px;color:#123e78}.review-queue-title p{margin:0;max-width:760px;color:#64748b;line-height:1.5}
+.review-summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:18px 0}
+.review-summary>div{position:relative;overflow:hidden;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:14px 16px}
+.review-summary>div:nth-child(2){background:#eff6ff;border-color:#bfdbfe}.review-summary>div:nth-child(3){background:#fff7ed;border-color:#fed7aa}.review-summary>div:nth-child(4){background:#f0fdf4;border-color:#bbf7d0}.review-summary>div:nth-child(5){background:#faf5ff;border-color:#e9d5ff}
+.review-summary span{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.045em;color:#64748b}.review-summary strong{display:block;margin-top:4px;font-size:25px;line-height:1;color:#0f172a}
+.review-filter-grid{display:grid;grid-template-columns:repeat(3,minmax(190px,1fr));gap:14px;background:#f8fbff;border:1px solid #dbeafe;border-radius:15px;padding:16px}
+.review-filter-grid label{display:grid;gap:6px;font-size:11px;font-weight:800;color:#475569;text-transform:uppercase;letter-spacing:.025em}
+.review-filter-grid select{width:100%;height:41px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;padding:0 10px;color:#0f172a;font-size:13px;outline:none}
+.review-filter-grid select:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.review-check{display:flex!important;flex-direction:row!important;align-items:center;align-self:end;height:41px;gap:8px!important;background:#fff;border:1px solid #cbd5e1;border-radius:9px;padding:0 11px;text-transform:none!important}
+.review-check input{width:16px;height:16px}
+.review-filter-grid>.primary-action{align-self:end;min-height:41px;justify-content:center}
+.review-bulk-actions{display:flex;align-items:center;gap:12px;margin:16px 0 12px;padding:11px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
+.review-bulk-actions span{font-size:12px;font-weight:700;color:#64748b;margin-right:auto}
+.check-button{display:inline-grid;place-items:center;border:0;background:transparent;color:#2563eb;cursor:pointer;padding:3px}
+.review-flag-row{background:#fffaf3}.review-flag-row>td:first-child{color:#d97706}
+.status-pill{display:inline-flex;font-size:10px;font-weight:800;text-transform:capitalize;background:#eef2ff;color:#3730a3;padding:5px 9px;border-radius:999px}
+.review-queue-card table small{display:block;color:#64748b;margin-top:3px}
+.review-queue-card .responsive-table{border:1px solid #e2e8f0;border-radius:12px;overflow:auto}
+.review-queue-card table{width:100%;border-collapse:collapse}.review-queue-card th{background:#f8fafc;color:#475569;font-size:10px;text-transform:uppercase;letter-spacing:.035em;white-space:nowrap}.review-queue-card th,.review-queue-card td{padding:11px 12px;border-bottom:1px solid #edf2f7;text-align:left}
+@media(max-width:1050px){.review-filter-grid{grid-template-columns:repeat(2,minmax(180px,1fr))}.review-summary{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.review-filter-grid,.review-summary{grid-template-columns:1fr}.review-bulk-actions,.review-queue-title{flex-wrap:wrap}.review-bulk-actions span{width:100%}}

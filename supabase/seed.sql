@@ -1,0 +1,2 @@
+-- Fresh reconstruction: no automatic demo seed.
+-- Re-create school configuration and approved demo data explicitly after verification.

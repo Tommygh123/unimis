@@ -1,0 +1,2 @@
+import {useEffect,useRef} from "react";import toast from "react-hot-toast";
+export default function Toast({message,type="success",onClose,id}){const shown=useRef(null);useEffect(()=>{if(!message)return;const key=id||`${type}:${message}`;if(shown.current===key)return;shown.current=key;if(type==="error")toast.error(message,{id:key,duration:4800});else toast.success(message,{id:key,duration:4200});const timer=setTimeout(()=>{shown.current=null;onClose?.()},type==="error"?4850:4250);return()=>clearTimeout(timer)},[message,type,onClose,id]);return null;}

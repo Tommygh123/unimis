@@ -1,0 +1,1 @@
+import {useAuth} from "../../contexts/AuthContext";export default function Dashboard(){const {user,signOut}=useAuth();return <main className="dashboard"><h1>UniMIS Dashboard</h1><p>Authentication foundation is working.</p><p>{user?.email}</p><button onClick={signOut}>Sign out</button></main>}
