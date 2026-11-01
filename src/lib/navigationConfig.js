@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 export const ownerItems = [
   { label: "Overview", path: "/owner", icon: LayoutDashboard },
-  { label: "Administrators", path: "/owner/users", icon: UserRoundCog, permission: "users.view" },
+  { label: "User Management & Access Requests", path: "/owner/users", icon: UserRoundCog, permission: "users.view" },
   { label: "Roles & Permissions", path: "/owner/roles", icon: ShieldCheck, permission: "roles.view" },
   { label: "Audit Logs", path: "/owner/audit", icon: ScrollText, permission: "audit.view" },
   { label: "System Settings", path: "/owner/settings", icon: Settings, permission: "settings.view" },

@@ -22,7 +22,6 @@ import LecturerDashboard from "./pages/dashboard/LecturerDashboard";
 import StudentDashboard from "./pages/dashboard/StudentDashboard";
 import ParentDashboard from "./pages/dashboard/ParentDashboard";
 import SetupReadiness from "./pages/dashboard/SetupReadiness";
-import AdministratorManagement from "./pages/dashboard/AdministratorManagement";
 import UserManagement from "./pages/dashboard/UserManagement116";
 import AcademicsManagement from "./pages/dashboard/AcademicsManagement";
 import AdmissionsManagement from "./pages/dashboard/AdmissionsManagement";
@@ -74,7 +73,7 @@ export default function App() {
             <Route path="/owner/website" element={<WebsiteManagement />} />
             <Route path="/owner/setup" element={<SetupReadiness />} />
             <Route path="/owner/payroll" element={<Operations152 domain="payroll" />} />
-            <Route path="/owner/users" element={<AdministratorManagement />} />
+            <Route path="/owner/users" element={<UserManagement />} />
             <Route path="/owner/deputies" element={<DeputyAuthority129 />} />
             <Route path="/owner/roles" element={<UserManagement />} />
             <Route path="/owner/support" element={<TechnicalSupport151 />} />
