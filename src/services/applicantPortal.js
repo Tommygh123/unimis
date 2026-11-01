@@ -185,7 +185,7 @@ export async function deleteApplicantDocument(documentRow){
 export async function applicantSignUp({email,password,fullName}){
   const {data,error}=await supabase.auth.signUp({
     email,password,options:{
-      data:{full_name:fullName,account_type:"applicant"},
+      data:{full_name:fullName,account_type:"applicant",app_id:"unimis"},
       emailRedirectTo:`${window.location.origin}/auth/callback?next=/apply`
     }
   });

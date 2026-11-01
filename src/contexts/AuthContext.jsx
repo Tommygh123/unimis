@@ -9,7 +9,7 @@ export function AuthProvider({children}){
   return()=>subscription.unsubscribe();
  },[]);
  const signIn=(email,password)=>supabase.auth.signInWithPassword({email,password});
- const signUp=(email,password,full_name)=>supabase.auth.signUp({email,password,options:{data:{full_name},emailRedirectTo:`${window.location.origin}/auth/callback`}});
+ const signUp=(email,password,full_name)=>supabase.auth.signUp({email,password,options:{data:{full_name,app_id:"unimis"},emailRedirectTo:`${window.location.origin}/auth/callback`}});
  const signOut=()=>supabase.auth.signOut();
  return <AuthContext.Provider value={{session,user:session?.user??null,loading,signIn,signUp,signOut}}>{children}</AuthContext.Provider>;
 }
