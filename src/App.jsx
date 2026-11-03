@@ -40,6 +40,8 @@ import AcademicDocuments115 from "./pages/dashboard/AcademicDocuments115";
 import AcademicReports097 from "./pages/dashboard/AcademicReports097";
 import LecturerReports115 from "./pages/dashboard/LecturerReports115";
 import Workspace101 from "./pages/dashboard/Workspace101";
+import HRPayrollIntegrated from "./pages/dashboard/hrpayroll/HRPayrollIntegrated";
+import EmployeeSelfService180 from "./pages/dashboard/EmployeeSelfService180";
 
 export default function App() {
   return (
@@ -72,14 +74,14 @@ export default function App() {
             <Route path="/owner/dashboard" element={<Navigate to="/owner" replace />} />
             <Route path="/owner/website" element={<WebsiteManagement />} />
             <Route path="/owner/setup" element={<SetupReadiness />} />
-            <Route path="/owner/payroll" element={<Operations152 domain="payroll" />} />
+            <Route path="/owner/payroll" element={<HRPayrollIntegrated />} />
             <Route path="/owner/users" element={<UserManagement />} />
             <Route path="/owner/deputies" element={<DeputyAuthority129 />} />
             <Route path="/owner/roles" element={<UserManagement />} />
             <Route path="/owner/support" element={<TechnicalSupport151 />} />
             <Route path="/owner/audit" element={<AuditorWorkspace116 />} />
             <Route path="/owner/finance-reports" element={<FinanceReports107 />} />
-            <Route path="/owner/hr" element={<Operations152 domain="hr" />} />
+            <Route path="/owner/hr" element={<HRPayrollIntegrated />} />
             <Route path="/owner/procurement" element={<Operations152 domain="procurement" />} />
             <Route path="/owner/library" element={<Operations152 domain="library" />} />
             <Route path="/owner/accommodation" element={<Operations152 domain="hostel" />} />
@@ -92,8 +94,8 @@ export default function App() {
             <Route path="/admin/users" element={<UserManagement />} />
             <Route path="/admin/website" element={<WebsiteManagement />} />
             <Route path="/admin/settings" element={<InstitutionSettings />} />
-            <Route path="/admin/payroll-workspace" element={<Operations152 domain="payroll" />} />
-            <Route path="/admin/hr" element={<Operations152 domain="hr" />} />
+            <Route path="/admin/payroll-workspace" element={<HRPayrollIntegrated />} />
+            <Route path="/admin/hr" element={<HRPayrollIntegrated />} />
             <Route path="/admin/procurement" element={<Operations152 domain="procurement" />} />
             <Route path="/admin/library" element={<Operations152 domain="library" />} />
             <Route path="/admin/accommodation" element={<Operations152 domain="hostel" />} />
@@ -114,7 +116,7 @@ export default function App() {
             <Route path="/admin/academic-documents" element={<AcademicDocuments115 />} />
             <Route path="/admin/reports" element={<AcademicReports097 />} />
           </Route>
-          <Route element={<RoleRoute roles={["owner","finance_officer"]} />}>
+          <Route element={<RoleRoute roles={["owner","finance_officer","accountant"]} />}>
             <Route path="/admin/finance" element={<Navigate to="/admin/finance/operations" replace />} />
             <Route path="/admin/finance/operations" element={<FinanceManagement workspace="operations" />} />
             <Route path="/admin/finance/reports" element={<FinanceReports107 />} />
@@ -150,27 +152,27 @@ export default function App() {
             <Route path="/audit/reports" element={<FinanceReports107 />} />
           </Route>
 
-          <Route element={<RoleRoute roles={["finance_officer"]} />}>
+          <Route element={<RoleRoute roles={["finance_officer","accountant"]} />}>
             <Route path="/finance" element={<Navigate to="/finance/operations" replace />} />
             <Route path="/finance/operations" element={<FinanceManagement workspace="operations" />} />
-            <Route path="/finance/payroll" element={<Operations152 domain="payroll" />} />
+            <Route path="/finance/payroll" element={<HRPayrollIntegrated />} />
             <Route path="/finance/procurement" element={<Operations152 domain="procurement" />} />
             <Route path="/finance/accommodation" element={<Operations152 domain="hostel" />} />
             <Route path="/finance/reports" element={<FinanceReports107 />} />
           </Route>
 
-          <Route element={<RoleRoute roles={["owner","admin","registrar","hr_officer","payroll_officer","procurement_officer","accommodation_officer","librarian","lecturer","staff","finance_officer"]} />}>
-            <Route path="/employee-services" element={<Operations152 domain="self" />} />
+          <Route element={<RoleRoute roles={["owner","admin","registrar","admissions_officer","finance_officer","accountant","hr_officer","hr_manager","payroll_officer","payroll_manager","procurement_officer","accommodation_officer","librarian","lecturer","exam_officer","communications_officer","staff","employee","auditor","deputy_access_authority"]} />}>
+            <Route path="/employee-services" element={<EmployeeSelfService180 />} />
           </Route>
           <Route element={<RoleRoute roles={["procurement_officer"]} />}>
             <Route path="/procurement" element={<Operations152 domain="procurement" />} />
           </Route>
           <Route element={<RoleRoute roles={["hr_officer"]} />}>
-            <Route path="/hr" element={<Operations152 domain="hr" />} />
+            <Route path="/hr" element={<HRPayrollIntegrated />} />
           </Route>
 
           <Route element={<RoleRoute roles={["payroll_officer"]} />}>
-            <Route path="/payroll" element={<Operations152 domain="payroll" />} />
+            <Route path="/payroll" element={<HRPayrollIntegrated />} />
           </Route>
 
           <Route element={<RoleRoute roles={["exam_officer"]} />}>
@@ -190,7 +192,7 @@ export default function App() {
           </Route>
 
           <Route element={<RoleRoute roles={["lecturer"]} />}>
-            <Route path="/lecturer/employee-services" element={<Operations152 domain="self" />} />
+            <Route path="/lecturer/employee-services" element={<EmployeeSelfService180 />} />
             <Route path="/lecturer/support" element={<AcademicSupport138 lecturer />} />
             <Route path="/lecturer/reports" element={<LecturerReports115 />} />
             <Route path="/lecturer/*" element={<LecturerDashboard />} />

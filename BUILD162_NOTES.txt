@@ -1,0 +1,10 @@
+UniMIS Build 162 - Fast Website Publication Controls
+
+Changes:
+- Adds direct Publish / Unpublish action to every University Activities & Showcase item.
+- Keeps Edit and Delete actions unchanged.
+- Uses the existing unimis_save_showcase_item RPC; no database migration is required.
+- Student Portal branding from Build 161 remains unchanged.
+
+Install by extracting this ZIP into C:\unimis.
+No Docker, Supabase migration, or remote SQL is required for Build 162.

@@ -43,3 +43,45 @@
 @media(max-width:1000px){.public-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.public-feature-band,.public-learning-section,.public-projects,.public-alumni{padding:70px 16px}.public-story-grid{grid-template-columns:1fr}.public-learning-placeholder{padding:28px 20px;display:block}.public-learning-placeholder>svg{margin-bottom:14px}.public-project-list article{grid-template-columns:62px minmax(0,1fr)}.public-project-list article>a{display:none}.public-header nav{max-height:calc(100vh - 85px);overflow:auto}}
 @media(max-width:480px){.public-project-list article{grid-template-columns:1fr}.public-project-year{height:auto;display:inline-flex;width:max-content;padding:7px 10px}}
+
+/* Build 164 — restored, persistent announcements section */
+.public-announcements{padding:64px max(5vw,24px);background:#f7f9fc}
+.public-announcement-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.public-announcement-grid>article{display:flex;gap:14px;background:#fff;border:1px solid #e4eaf1;border-radius:14px;padding:20px;box-shadow:0 8px 24px rgba(7,32,63,.05)}
+.public-announcement-grid>article>svg{flex:0 0 auto;color:#c99716;margin-top:3px}
+.public-announcement-grid article.featured{border-top:4px solid #c99716}
+.public-announcement-grid small{display:block;color:#65758b;margin-bottom:5px}
+.public-announcement-grid h3{margin:0 0 8px;color:#0b315c}
+.public-announcement-grid p{margin:0 0 12px;line-height:1.6;color:#4a596c}
+.public-announcement-grid a{display:inline-flex;align-items:center;gap:6px;font-weight:700;text-decoration:none}
+.public-announcement-empty{display:flex;align-items:center;gap:14px;background:#fff;border:1px dashed #ccd7e4;border-radius:14px;padding:22px;color:#53657a}
+.public-announcement-empty strong,.public-announcement-empty span{display:block}
+@media(max-width:900px){.public-announcement-grid{grid-template-columns:1fr}.public-announcements{padding:42px 20px}}
+
+/* Build 165 — public student-project media cards */
+.public-project-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:26px}
+.public-project-media-card{overflow:hidden;border:1px solid #dfe7f0;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(7,32,63,.06)}
+.public-project-media{background:#071f3d;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.public-project-media img,.public-project-media video{width:100%;height:100%;object-fit:cover;display:block}
+.public-project-media video{background:#071f3d}
+.public-project-media-empty{display:flex;flex-direction:column;align-items:center;gap:8px;color:#fff}
+.public-project-media-body{padding:22px}
+.public-project-media-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.public-project-media-body .public-project-year{display:inline-flex;width:auto;height:auto;padding:7px 12px;border-radius:999px}
+.public-project-featured{font-size:.82rem;font-weight:800;color:#8a6200;background:#fff4ce;padding:6px 10px;border-radius:999px}
+.public-project-media-body h3{margin:0 0 8px;color:#0b315c;font-size:1.35rem}
+.public-project-media-body p{color:#53657a;line-height:1.65}
+.public-project-link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-weight:800;text-decoration:none}
+@media(max-width:850px){.public-project-media-grid{grid-template-columns:1fr}}
+
+/* Build 165 — cached website load: only the very first uncached visit shows Loading.
+   Subsequent public navigation/re-clicks render the last successful bootstrap immediately. */
+
+/* Build 166 — separate project photograph and demonstration video */
+.public-project-media-stack{background:#fff}
+.public-project-photo{aspect-ratio:16/9;background:#eef3f8;overflow:hidden}
+.public-project-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.public-project-video{padding:18px;background:#f5f8fc;border-top:1px solid #dfe7f0}
+.public-project-video-label{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#52677f;margin:0 0 10px}
+.public-project-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#071f3d;border-radius:12px}
+.public-project-media-stack>.public-project-media-empty{aspect-ratio:16/9}

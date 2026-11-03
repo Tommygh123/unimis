@@ -1,0 +1,31 @@
+.sidebar-menu-group{margin:5px 7px;border-left:3px solid transparent;border-radius:8px;overflow:hidden}.sidebar-menu-group.tone-home{border-left-color:#64748b}.sidebar-menu-group.tone-home .sidebar-group-toggle{background:rgba(100,116,139,.12)}.sidebar-menu-group.tone-institution{border-left-color:#7c3aed}.sidebar-menu-group.tone-institution .sidebar-group-toggle{background:rgba(124,58,237,.12)}.sidebar-menu-group.tone-admissions{border-left-color:#c2410c}.sidebar-menu-group.tone-admissions .sidebar-group-toggle{background:rgba(194,65,12,.12)}.sidebar-menu-group.tone-students{border-left-color:#0284c7}.sidebar-menu-group.tone-students .sidebar-group-toggle{background:rgba(2,132,199,.12)}.sidebar-menu-group.tone-academics{border-left-color:#0f766e}.sidebar-menu-group.tone-academics .sidebar-group-toggle{background:rgba(15,118,110,.14)}.sidebar-menu-group.tone-finance{border-left-color:#a16207}.sidebar-menu-group.tone-finance .sidebar-group-toggle{background:rgba(161,98,7,.15)}.sidebar-menu-group.tone-financeReports{border-left-color:#b45309}.sidebar-menu-group.tone-financeReports .sidebar-group-toggle{background:rgba(180,83,9,.11)}.sidebar-menu-group.tone-payroll{border-left-color:#be123c}.sidebar-menu-group.tone-payroll .sidebar-group-toggle{background:rgba(190,18,60,.11)}.sidebar-menu-group.tone-services{border-left-color:#4f46e5}.sidebar-menu-group.tone-services .sidebar-group-toggle{background:rgba(79,70,229,.11)}.sidebar-menu-group.tone-access{border-left-color:#475569}.sidebar-menu-group.tone-access .sidebar-group-toggle{background:rgba(71,85,105,.13)}.sidebar-menu-group.active-group .sidebar-group-toggle{font-weight:850}.sidebar-submenu{padding-bottom:5px}
+/* 100B sidebar layout repair */
+.sidebar{height:100vh;max-height:100vh;overflow:hidden;display:flex;flex-direction:column}
+.sidebar-brand{flex:0 0 auto}
+.sidebar-nav{flex:1 1 auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;padding:8px 7px 22px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.28) transparent}
+.sidebar-nav::-webkit-scrollbar{width:6px}.sidebar-nav::-webkit-scrollbar-track{background:transparent}.sidebar-nav::-webkit-scrollbar-thumb{background:rgba(255,255,255,.28);border-radius:10px}
+.sidebar-menu-group{margin:0 0 8px!important;border-left-width:3px!important;border-radius:8px!important;background:rgba(255,255,255,.025)}
+.sidebar-group-toggle{width:100%;min-height:38px!important;height:auto!important;padding:9px 9px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:8px;line-height:1.15!important;text-align:left!important;white-space:normal!important;overflow:visible!important}
+.sidebar-group-toggle span{display:block!important;min-width:0;font-size:10.5px!important;font-weight:850!important;letter-spacing:.035em!important;line-height:1.15!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.sidebar-group-toggle svg{flex:0 0 auto}
+.sidebar-submenu{padding:3px 5px 7px 7px!important}
+.sidebar-submenu .nav-link{min-height:35px!important;height:auto!important;padding:7px 8px!important;margin:2px 0!important;border-radius:7px!important;display:flex!important;align-items:center!important;gap:8px!important;white-space:normal!important;overflow:visible!important}
+.sidebar-submenu .nav-link span{font-size:11px!important;line-height:1.18!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.sidebar-submenu .nav-link svg{flex:0 0 16px}
+.sidebar-menu-group.active-group{background:rgba(255,255,255,.045)}
+
+/* 101 — workspace navigation: large readable top-level modules */
+.sidebar-nav{padding:14px 12px 28px!important;gap:7px!important}
+.sidebar-workspace-link{min-height:48px;display:grid;grid-template-columns:22px 1fr 16px;align-items:center;gap:10px;padding:0 12px;border-radius:10px;text-decoration:none;color:#e8f0f8;font-size:13.5px;font-weight:780;letter-spacing:0;line-height:1.2;border-left:4px solid rgba(255,255,255,.18);background:rgba(255,255,255,.035)}
+.sidebar-workspace-link:hover{background:rgba(255,255,255,.09);color:#fff}.sidebar-workspace-link.active{background:#fff;color:#173f70;box-shadow:0 5px 14px rgba(0,0,0,.16)}
+.sidebar-workspace-link.tone-institution{border-left-color:#8b5cf6}.sidebar-workspace-link.tone-admissions{border-left-color:#f97316}.sidebar-workspace-link.tone-students{border-left-color:#38bdf8}.sidebar-workspace-link.tone-academics{border-left-color:#14b8a6}.sidebar-workspace-link.tone-finance{border-left-color:#f59e0b}.sidebar-workspace-link.tone-payroll{border-left-color:#fb7185}.sidebar-workspace-link.tone-services{border-left-color:#818cf8}.sidebar-workspace-link.tone-access{border-left-color:#94a3b8}
+.sidebar-menu-group{margin:0!important;border:0!important;background:transparent!important}.sidebar-menu-group .sidebar-group-toggle{min-height:48px!important;padding:0 12px!important;border-left:4px solid #818cf8!important;border-radius:10px!important;background:rgba(255,255,255,.035)!important;color:#e8f0f8!important;font-size:13.5px!important;font-weight:780!important;text-transform:none!important;letter-spacing:0!important}.sidebar-menu-group .sidebar-group-toggle span{font-size:13.5px!important;letter-spacing:0!important;text-transform:none!important}.sidebar-submenu{padding:5px 0 2px 17px!important}.sidebar-submenu .nav-link{font-size:13px!important;min-height:40px!important;background:rgba(255,255,255,.025)}.sidebar-submenu .nav-link.active{background:#fff!important;color:#173f70!important}
+
+/* 111: keep expanded workspaces at their natural height inside one scroll area. */
+.sidebar{height:100dvh;max-height:100dvh}
+.sidebar-nav{display:flex!important;flex-direction:column!important;min-height:0;overflow-y:auto!important;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-gutter:stable;padding-bottom:40px!important}
+.sidebar-nav>*{flex:0 0 auto!important}
+.sidebar-nav .sidebar-menu-group{max-height:none!important;overflow:visible!important}
+.sidebar-nav .accounts-menu110,.sidebar-nav .accounts-menu-branch110,.sidebar-nav .accounts-menu-pages110{height:auto;max-height:none;overflow:visible;flex-shrink:0}
+.sidebar-nav::-webkit-scrollbar{width:8px}
+.sidebar-nav::-webkit-scrollbar-thumb{background:#90a7c3;border:2px solid #173f70;border-radius:8px}

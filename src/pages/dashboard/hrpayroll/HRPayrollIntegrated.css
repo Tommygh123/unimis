@@ -1,0 +1,492 @@
+@scope (.hrpayroll-integrated) {
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172033;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}.app{min-height:100vh;display:grid;grid-template-columns:260px 1fr}aside{background:#1565c0;color:#dbe7f5;padding:24px 16px;display:flex;flex-direction:column}.logo{display:flex;gap:12px;align-items:center;padding:4px 8px 28px}.logo span{display:block;font-size:12px;color:#d7e8ff;margin-top:3px}.mark{width:56px;height:56px;border-radius:16px;background:#24a87a;display:grid;place-items:center;color:white;font-weight:800}.mark.small{width:42px;height:42px;border-radius:12px}nav{display:grid;gap:7px}nav button{border:0;background:transparent;color:#e7f1ff;padding:12px 14px;border-radius:10px;text-align:left;display:flex;gap:11px;align-items:center;cursor:pointer}nav button svg{width:19px}nav button.active,nav button:hover{background:#0d47a1;color:white}.sideFoot{margin-top:auto;border-top:1px solid #4f8fd7;padding:18px 8px 0}.sideFoot span,.sideFoot small{display:block}.sideFoot small{color:#d7e8ff;text-transform:capitalize;margin-top:4px}main{padding:30px 36px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}header h1{margin:0;font-size:26px}header p{margin:5px 0;color:#718096}.ghost{border:1px solid #dce3ec;background:white;border-radius:9px;padding:9px 13px;display:flex;gap:8px;align-items:center}.ghost svg{width:17px}.hero{background:linear-gradient(120deg,#173b63,#1d6b70);color:white;border-radius:18px;padding:32px 36px;display:flex;justify-content:space-between;align-items:center}.hero h2{font-size:30px;margin:10px 0 8px}.hero p{color:#d8edf0;max-width:650px}.pill{font-size:11px;font-weight:800;letter-spacing:.08em;background:#2ac48e;padding:6px 9px;border-radius:99px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0}.card,.panel{background:white;border:1px solid #e4e9f0;border-radius:14px;padding:20px;box-shadow:0 4px 16px #18304a0a}.card svg{color:#1f7a69}.card span,.card small{display:block;color:#718096}.card strong{display:block;font-size:30px;margin:12px 0 3px}.panel h3{margin-top:0}.ready{display:grid;grid-template-columns:180px 1fr 70px;gap:16px;padding:14px 0;border-top:1px solid #edf0f4;align-items:center}.ready span{color:#65758b}.ready em{font-style:normal;color:#16845f;font-weight:700}.empty{margin-top:25px;border:1px dashed #cbd5e1;padding:35px;border-radius:12px;color:#64748b;background:#f8fafc}.auth{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr}.brandCard{background:#10243e;color:white;padding:11vh 10vw}.brandCard h1{font-size:40px;margin-bottom:5px}.brandCard>p{color:#9fb4cc;margin-bottom:50px}.feature{display:flex;gap:12px;margin:22px 0;align-items:center;color:#dce8f5}.feature svg{color:#38c798}.authCard{margin:auto;width:min(430px,80%);display:grid;gap:15px}.authCard h2{font-size:30px;margin:0}.authCard>p{color:#718096;margin-top:-8px}.authCard label,.setupCard label{display:grid;gap:7px;font-size:13px;font-weight:650}.authCard input,.setupCard input{border:1px solid #cfd8e3;border-radius:9px;padding:12px;background:white}.authCard button,.setupCard button{border:0;border-radius:9px;padding:12px;background:#1c806a;color:white;font-weight:750;cursor:pointer}.authCard .link{background:transparent;color:#35607d}.notice{padding:11px;border-radius:8px;background:#eef7f3;color:#276b5a;font-size:13px}.setup{min-height:100vh;display:grid;place-items:center;padding:30px}.setupCard{width:min(540px,95%);display:grid;gap:17px;padding:35px}.setupCard h2{margin:0}.setupCard p{color:#68778c}.bigIcon{width:58px;height:58px;border-radius:15px;background:#e8f6f1;color:#1c806a;display:grid;place-items:center}.center{min-height:100vh;display:grid;place-items:center}@media(max-width:900px){.app{grid-template-columns:78px 1fr}.logo>div:last-child,.sideFoot,nav button{font-size:0}.logo{padding-left:2px}.logo .mark{display:grid}nav button{justify-content:center}.cards{grid-template-columns:1fr 1fr}.auth{grid-template-columns:1fr}.brandCard{display:none}}@media(max-width:600px){main{padding:20px}.cards{grid-template-columns:1fr}.ready{grid-template-columns:1fr}.hero svg{display:none}}
+
+/* Package 002 operational UI */
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px}.toolbar h2{margin:0}.toolbar p,.muted{color:#718096}.toolbar button,.panel button,.inline button{border:0;border-radius:9px;padding:10px 14px;background:#1c806a;color:white;font-weight:700;display:flex;align-items:center;gap:7px;cursor:pointer}.toolbar button svg,.inline button svg{width:17px}.twoCol{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px}.panel label{display:grid;gap:6px;font-size:13px;font-weight:650;margin:12px 0}.panel input,.panel select,.toolbar select,.inline select,.formGrid input,.formGrid select{border:1px solid #cfd8e3;border-radius:8px;padding:10px;background:white}.formGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}.formGrid label{display:grid;gap:6px;font-size:13px;font-weight:650}.formActions{grid-column:1/-1}.formActions button{border:0;background:#1c806a;color:white;padding:11px 16px;border-radius:8px;font-weight:700}.tableWrap{background:white;border:1px solid #e4e9f0;border-radius:13px;overflow:auto;margin:14px 0 22px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{padding:13px 15px;border-bottom:1px solid #edf0f4;text-align:left;font-size:13px}th{background:#f8fafc;color:#506176;font-size:12px;text-transform:uppercase;letter-spacing:.04em}.listRow{display:grid;grid-template-columns:90px 1fr;padding:11px 0;border-top:1px solid #edf0f4}.inline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.runCards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.runCard{background:white;border:1px solid #e4e9f0;border-radius:13px;padding:17px;cursor:pointer}.runCard>div:first-child{display:flex;justify-content:space-between}.runCard span,.runCard small{display:block;color:#718096;margin-top:4px}.runCard strong{display:block;font-size:23px;margin:15px 0 4px}.status{display:inline-block;font-style:normal;text-transform:capitalize;font-size:11px;font-weight:800;padding:5px 8px;border-radius:99px;background:#edf2f7;color:#506176}.status.posted,.status.approved{background:#e7f7ef;color:#167354}.status.calculated,.status.review{background:#fff6dc;color:#8a6410}.warning{padding:12px 14px;border-radius:9px;background:#fff8e6;border:1px solid #f4dfaa;color:#725717;font-size:13px;margin:12px 0}.flow{padding:18px;border-radius:10px;background:#f1f7fb;font-weight:650;color:#315a76}.notice{margin:10px 0 14px}@media(max-width:1100px){.formGrid{grid-template-columns:1fr 1fr}.runCards{grid-template-columns:1fr 1fr}}@media(max-width:760px){.twoCol,.runCards,.formGrid{grid-template-columns:1fr}.toolbar{align-items:flex-start;flex-direction:column}}
+/* Package 002c employee master */
+.employeeMaster{margin-bottom:20px}.employeeTabs{display:flex;gap:8px;border-bottom:1px solid #e5eaf0;margin:-4px 0 20px}.employeeTabs button{background:transparent;color:#52647a;border-radius:8px 8px 0 0;border-bottom:3px solid transparent}.employeeTabs button.selected{background:#eaf3ff;color:#0d47a1;border-bottom-color:#1976d2}.masterGrid{display:grid;grid-template-columns:190px 1fr;gap:24px}.fields{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.fields label{display:grid;gap:6px;font-size:13px;font-weight:650}.fields input,.fields select{border:1px solid #cfd8e3;border-radius:8px;padding:10px;background:white}.photoBox{align-content:start}.photoPreview{height:150px;border:1px dashed #b9c7d8;border-radius:12px;background:#f7faff;display:grid;place-items:center;overflow:hidden;color:#6e8198}.photoPreview img{width:100%;height:100%;object-fit:cover}.photoPreview svg{width:52px;height:52px}.photoBox input{font-size:12px;padding:8px 0;border:0}.photoBox small{color:#718096;font-weight:400}.infoBox{grid-column:1/-1;background:#eef6ff;border:1px solid #cfe2fa;border-radius:10px;padding:14px;display:grid;gap:5px;color:#315b85}.infoBox span{font-size:13px;font-weight:400}.employeeMaster .formActions{margin-top:18px}@media(max-width:900px){.masterGrid{grid-template-columns:1fr}.photoBox{max-width:220px}.fields{grid-template-columns:1fr 1fr}}@media(max-width:600px){.fields{grid-template-columns:1fr}.employeeTabs{overflow:auto}}
+.employeeCards{display:grid;gap:10px;margin-top:16px}.employeeCard{width:100%;display:grid;grid-template-columns:48px 1fr auto;align-items:center;text-align:left;background:#fff;color:#10233f;border:1px solid #dbe4ef;padding:12px 14px;border-radius:12px}.employeeCard:hover{border-color:#2563eb;transform:none}.employeeCard div:nth-child(2){display:grid;gap:3px}.employeeCard span,.employeeCard small{color:#61728e}.employeeCard strong{text-transform:capitalize;font-size:12px;background:#e8f5ef;color:#14745b;padding:6px 9px;border-radius:20px}.avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#e7f0ff;color:#1d4ed8;font-weight:800}.profilePanel{margin-top:16px}.profileHead{display:flex;justify-content:space-between;gap:16px;align-items:center}.profileGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}.profileGrid>div{border:1px solid #e1e8f0;border-radius:10px;padding:12px;display:grid;gap:5px}.profileGrid small{color:#71809a}.inlineForm{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;align-items:end;margin:16px 0}.inlineForm input,.inlineForm select{margin:0}.wide{grid-column:1/-1}textarea{min-height:76px;resize:vertical}@media(max-width:800px){.profileGrid{grid-template-columns:1fr 1fr}.employeeCard{grid-template-columns:42px 1fr}.employeeCard strong{grid-column:2}.inlineForm{grid-template-columns:1fr}}
+/* Package 003 grouped enterprise navigation + recruitment */
+aside{overflow-y:auto;max-height:100vh;position:sticky;top:0}.navSection{display:grid;gap:4px;margin-bottom:12px}.navHeading{font-size:11px;font-weight:800;letter-spacing:.12em;color:#b9d5f5;padding:13px 14px 5px}.navSection button{width:100%}.pipelineActions{display:flex;gap:6px;flex-wrap:wrap}.pipelineActions button{border:0;background:#1565c0;color:#fff;padding:7px 10px;border-radius:7px;font-weight:700;cursor:pointer}.doneText{font-weight:700;color:#16845f}.status.shortlisted,.status.interviewed{background:#eaf3ff;color:#0d47a1}.status.offered,.status.offer_accepted{background:#fff3d6;color:#8a6410}@media(max-width:900px){.navHeading{font-size:0;padding:6px 0;border-top:1px solid #4f8fd7}.navSection{margin-bottom:4px}}
+
+.recruitmentTop{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,1fr);gap:18px;align-items:start;margin-bottom:22px}.vacancyGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}.vacancyGrid textarea{width:100%;box-sizing:border-box;border:1px solid #cfd8e3;border-radius:8px;padding:10px;background:#fff;font:inherit}.checkLine{display:flex!important;grid-template-columns:auto 1fr!important;align-items:center;justify-content:flex-start;gap:8px}.checkLine input{width:auto}.applicantQuick{position:sticky;top:18px}.pipelineActions{display:flex;gap:6px;flex-wrap:wrap}.pipelineActions button{border:0;border-radius:7px;padding:7px 9px;background:#1c806a;color:#fff;font-weight:700;cursor:pointer}@media(max-width:900px){.recruitmentTop,.vacancyGrid{grid-template-columns:1fr}.applicantQuick{position:static}}
+
+/* Package 003c — Recruitment workspace */
+.recruitTabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;padding:7px;background:#fff;border:1px solid #dce4ee;border-radius:14px}.recruitTabs button{background:transparent;color:#425466;border:0;padding:10px 16px;border-radius:9px;font-weight:700}.recruitTabs button.active{background:#1976d2;color:#fff}.recruitMetrics{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:12px;margin-bottom:18px}.recruitMetrics .card{min-width:0}.recruitFlow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0}.recruitFlow span{background:#eef6ff;border:1px solid #cfe3fb;padding:9px 12px;border-radius:9px;font-weight:700;color:#245b91}.sectionTitle{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:14px}.sectionTitle h3{margin-top:0}.vacancyWorkspace{max-width:none}.vacancyWorkspace .vacancyGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 18px}.applicantWorkspace{max-width:900px}.applicantGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 18px;margin-bottom:16px}.applicantGrid .wide{grid-column:1/-1}@media(max-width:1100px){.recruitMetrics{grid-template-columns:repeat(3,1fr)}}@media(max-width:760px){.recruitMetrics{grid-template-columns:repeat(2,1fr)}.vacancyWorkspace .vacancyGrid,.applicantGrid{grid-template-columns:1fr}.vacancyWorkspace .vacancyGrid .wide,.applicantGrid .wide{grid-column:auto}.recruitTabs button{flex:1 1 140px}}
+/* Package 003d — vacancy publication + deployment employee import */
+.purpleBtn,.buttonLike.purpleBtn{background:#6d28d9!important;color:#fff!important}.purpleBtn:hover,.buttonLike.purpleBtn:hover{background:#5b21b6!important}.buttonLike{border:0;border-radius:9px;padding:10px 14px;font-weight:700;display:flex;align-items:center;gap:7px;cursor:pointer}.buttonLike svg,.purpleBtn svg{width:17px;height:17px}.secondaryBtn{background:#64748b!important}.importPanel{margin-bottom:20px}.importSummary{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.importSummary>*{padding:9px 12px;border-radius:9px;background:#f1f5f9}.importSummary b:first-child{background:#e8f7ef;color:#14745b}.importSummary b:nth-child(2){background:#fff1f2;color:#b42318}.importError{color:#b42318;font-weight:700}.importOk{color:#14745b;font-weight:700}.pipelineActions .purpleBtn{padding:7px 10px}.pipelineActions svg{width:14px;height:14px}
+
+/* Package 003e — form spacing and native select overlap hardening */
+.panel label,.fields label,.formGrid label,.vacancyGrid label,.applicantGrid label{
+  min-width:0;
+}
+.panel input,.panel select,.fields input,.fields select,.formGrid input,.formGrid select,
+.vacancyGrid input,.vacancyGrid select,.applicantGrid input,.applicantGrid select,
+.inlineForm input,.inlineForm select{
+  width:100%;
+  min-height:42px;
+  line-height:1.25;
+}
+/* Give native select popups breathing room so the following field label is not visually crowded. */
+.fields,.formGrid,.vacancyGrid,.applicantGrid{
+  row-gap:24px!important;
+}
+.employeeMaster .fields{row-gap:26px!important}
+.vacancyWorkspace .vacancyGrid,.applicantWorkspace .applicantGrid{row-gap:24px!important}
+.panel label{margin:16px 0}
+.fields label,.formGrid label,.vacancyGrid label,.applicantGrid label{align-content:start}
+select{position:relative;z-index:1}
+select:focus{z-index:3;outline:2px solid rgba(25,118,210,.16);outline-offset:2px}
+/* Keep page title/actions comfortably below the viewport edge after navigation/refresh. */
+main>header{padding-top:4px;min-height:58px}
+.toolbar{flex-wrap:wrap}
+.toolbar>div:last-child{flex-wrap:wrap}
+@media(max-width:760px){
+  .fields,.formGrid,.vacancyGrid,.applicantGrid{row-gap:20px!important}
+}
+
+/* Package 004 Employee Master lifecycle workspace */
+.employeeCardActions{margin-left:auto;display:flex;align-items:flex-end;gap:8px;flex-direction:column}.viewDetails{font-size:12px;font-weight:800;color:#2563eb}.wideCard{grid-column:1/-1}.preText{white-space:pre-wrap;line-height:1.55;margin-top:6px}.modulePlaceholder{padding:20px;border:1px solid #dbe5f1;border-radius:14px;background:#f8fbff}.modulePlaceholder h3{margin-top:0}.placeholderCards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}.placeholderCards>div{padding:14px;background:white;border:1px solid #e2e8f0;border-radius:12px;display:flex;flex-direction:column;gap:6px}.recruitmentHistory h3{margin-top:22px}.careerForm{margin-bottom:18px}.profilePanel .employeeTabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}.profilePanel .employeeTabs button{white-space:nowrap}@media(max-width:800px){.placeholderCards{grid-template-columns:1fr}.employeeCardActions{align-items:flex-start}}
+
+/* Package 004a — responsive Employee Master navigation + mobile foundation */
+.employeeProfileNav{display:grid;gap:10px;margin:16px 0 18px;min-width:0}
+.profileGroupTabs,.profileSubTabs{display:flex;gap:7px;flex-wrap:wrap;min-width:0}
+.profileGroupTabs{padding:6px;background:#f5f8fc;border:1px solid #dce5ef;border-radius:12px}
+.profileGroupTabs button,.profileSubTabs button{border:0;background:transparent;color:#43566f;padding:9px 12px;border-radius:8px;font-weight:750;white-space:nowrap}
+.profileGroupTabs button.selected{background:#1976d2;color:#fff}
+.profileSubTabs{padding:0 4px}
+.profileSubTabs button{background:#eef4fb;color:#365a80}
+.profileSubTabs button.selected{background:#dbeafe;color:#0d47a1;box-shadow:inset 0 -2px #1976d2}
+.mobileProfileSelect{display:none}
+.profilePanel{max-width:100%;overflow:hidden}
+.profilePanel .profileGrid{min-width:0}
+.profileGrid>div{min-width:0;overflow-wrap:anywhere}
+.tableWrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:900px){
+ .profileGroupTabs button{flex:1 1 135px}
+ .profileHead{align-items:flex-start}
+}
+@media(max-width:640px){
+ .profileGroupTabs,.profileSubTabs{display:none}
+ .mobileProfileSelect{display:grid;gap:6px;margin:0;font-size:12px;font-weight:800;color:#52647a}
+ .mobileProfileSelect select{width:100%;min-height:46px;border:1px solid #cfd8e3;border-radius:10px;background:#fff;padding:10px 12px;font:inherit;color:#10233f}
+ .profileHead{display:grid;grid-template-columns:1fr auto;gap:10px}
+ .profileHead h2{font-size:20px;margin-bottom:4px}
+ .profileHead p{font-size:13px;line-height:1.4;margin:0}
+ .profileGrid{grid-template-columns:1fr!important}
+ .wideCard{grid-column:auto}
+ .panel.profilePanel{padding:14px}
+ .toolbar .inline{width:100%;display:grid;grid-template-columns:1fr;gap:8px}
+ .toolbar .inline>button,.toolbar .inline>.buttonLike{width:100%;justify-content:center;box-sizing:border-box}
+ .employeeCard{padding:11px;grid-template-columns:40px minmax(0,1fr)!important;gap:8px}
+ .employeeCardActions{grid-column:2;flex-direction:row;align-items:center;justify-content:space-between;width:100%;margin-left:0}
+ .modulePlaceholder{padding:14px}
+ .inlineForm{grid-template-columns:1fr!important}
+ .recruitMetrics{grid-template-columns:1fr 1fr}
+ .recruitTabs{display:grid;grid-template-columns:1fr 1fr}
+ .recruitTabs button{min-width:0;padding:9px 7px}
+}
+@media(max-width:420px){
+ .recruitMetrics{grid-template-columns:1fr}
+ .recruitTabs{grid-template-columns:1fr}
+}
+
+/* Package 004b lifecycle actions */
+.lifecycleIntro{margin-bottom:16px}.lifecycleIntro p{color:#64748b}.lifecycleForm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:14px 0 24px;padding:18px;border:1px solid #dbe4ef;border-radius:14px;background:#f8fafc}.lifecycleForm label{display:flex;flex-direction:column;gap:7px;font-weight:700;color:#334155}.lifecycleForm input,.lifecycleForm select,.lifecycleForm textarea{width:100%;box-sizing:border-box}.wideField{grid-column:1/-1}@media(max-width:760px){.lifecycleForm{grid-template-columns:1fr}.wideField{grid-column:auto}}
+
+/* 004c document actions */
+.docActions{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}.docActions button{width:auto;min-width:72px;padding:.55rem .75rem}.docActions .secondaryBtn{background:#eef2ff;color:#334155;border:1px solid #cbd5e1}@media(max-width:640px){.docActions{align-items:stretch}.docActions button{flex:1 1 110px}}
+/* Package 005 Attendance + Leave */
+.timeStats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0}.timeForm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.timeForm label{display:flex;flex-direction:column;gap:7px;font-weight:700;color:#334155}.timeForm input,.timeForm select,.timeForm textarea{width:100%;box-sizing:border-box}.purpleBtn{background:#7c3aed!important;color:#fff!important}.purpleBtn:hover{background:#6d28d9!important}@media(max-width:900px){.timeForm{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:640px){.timeStats,.timeForm{grid-template-columns:1fr}.timeForm .wideField{grid-column:auto}.panel table{min-width:680px}}
+
+.captureInfo{display:flex;flex-direction:column;gap:8px;padding:18px;border:1px solid #dbeafe;background:#eff6ff;border-radius:12px}.captureInfo b{color:#1d4ed8}.captureInfo span,.muted{color:#64748b}.qrTokenPanel{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.qrTokenPanel>div:first-child{flex:1;min-width:240px}.qrPayload{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:22px;font-weight:800;letter-spacing:3px;padding:18px 22px;background:#111827;color:#fff;border-radius:12px;word-break:break-all}.checkLabel{flex-direction:row!important;align-items:center;margin-top:28px}.checkLabel input{width:auto!important}@media(max-width:640px){.qrPayload{font-size:16px;letter-spacing:2px;width:100%;box-sizing:border-box}.qrTokenPanel{align-items:stretch}}
+
+.qrDisplay{display:flex;gap:28px;align-items:center;flex-wrap:wrap}.qrDisplay img{width:280px;max-width:100%;height:auto;border:12px solid #fff;border-radius:14px;box-shadow:0 4px 18px #0f172a22}.qrDisplay>div{display:flex;flex-direction:column;gap:12px;min-width:220px}.qrDisplay strong{font-size:20px}.qrDisplay span{color:#64748b}.formActions{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:640px){.qrDisplay{justify-content:center;text-align:center}.qrDisplay>div{width:100%}}
+/* 005d Employee QR Scanner & Site Kiosk */
+.kioskControls{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.kioskControls select{min-width:280px}.kioskDisplay{max-width:650px;margin:24px auto;text-align:center;padding:28px;border:1px solid #dbeafe;border-radius:18px;background:#fff}.kioskDisplay h2{margin:0 0 4px}.kioskDisplay h3{margin:0 0 8px;color:#2563eb}.kioskDisplay img{width:min(520px,90vw);max-width:100%;border:14px solid #fff;box-shadow:0 6px 30px #0f172a24;border-radius:16px}.qrCountdown{font-size:24px;font-weight:800;margin-top:12px;color:#166534}.qrCountdown.expiring{color:#b45309}.employeeScanner{max-width:760px}.employeeIdentity{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:#eff6ff;border-radius:12px;margin-bottom:18px}.employeeIdentity b{font-size:20px}.employeeIdentity span{color:#64748b}.employeeScanner .warning select{display:block;margin-top:12px;width:100%;max-width:420px}.scanBtn{font-size:18px;padding:14px 22px}.cameraBox{margin-top:16px;overflow:hidden;border-radius:16px;background:#111827}.cameraBox video{width:100%;max-height:480px;display:block}.scanReady{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding:18px;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:14px}.scanReady>div{display:flex;flex-direction:column;flex:1}.attendanceSuccess{margin-top:22px;padding:28px;text-align:center;background:#ecfdf5;border:2px solid #86efac;border-radius:18px;display:flex;flex-direction:column;align-items:center;gap:7px}.attendanceSuccess h2{margin:4px 0;color:#166534}.attendanceSuccess b{font-size:20px}@media(max-width:640px){.kioskDisplay{padding:14px}.kioskControls select{min-width:100%;width:100%}.scanReady button{width:100%}}
+/* 005d Site QR Kiosk + Employee Mobile Scanner */
+.kioskPanel{max-width:820px}.kioskDisplay{max-width:620px;margin:24px auto;text-align:center;padding:28px;border:1px solid #dbeafe;border-radius:18px;background:#fff;display:flex;flex-direction:column;align-items:center;gap:10px}.kioskDisplay h2,.kioskDisplay h3{margin:0}.kioskDisplay h3{color:#2563eb}.kioskDisplay img{width:min(520px,90vw);max-width:100%;border:14px solid #fff;border-radius:16px;box-shadow:0 6px 30px #0f172a24}.scanReady{display:flex;gap:12px;align-items:center;padding:14px 16px;background:#ecfdf5;border:1px solid #86efac;border-radius:12px}.scanReady span{color:#166534}@media(max-width:640px){.kioskDisplay{padding:14px}.kioskDisplay img{border-width:8px}}
+/* Package 006b — professional HR analytics + payroll workspaces */
+.reportFilters{display:grid;grid-template-columns:repeat(5,minmax(140px,1fr));gap:14px;align-items:end;margin-bottom:16px}.reportFilters label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:800;color:#475569}.reportFilters input,.reportFilters select{width:100%;box-sizing:border-box}.filterActions{display:flex;align-items:end;gap:8px}.filterActions button{width:100%;justify-content:center}.reportTabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px;padding:6px;background:#eef3f8;border:1px solid #dbe4ee;border-radius:12px}.reportTabs button{background:transparent;color:#475569;border:0}.reportTabs button.selected{background:#1976d2;color:#fff}.secondaryBtn{background:#64748b!important;color:#fff!important}.paymentPrep{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.paymentPrep select{min-width:220px}@media(max-width:1050px){.reportFilters{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.reportFilters{grid-template-columns:1fr}.reportTabs{display:grid;grid-template-columns:1fr 1fr}.paymentPrep{align-items:stretch}.paymentPrep select,.paymentPrep button{width:100%}}@media print{aside,header,.reportFilters,.reportTabs,.toolbar button{display:none!important}main{margin:0!important;padding:0!important}.panel,.metric{box-shadow:none!important;break-inside:avoid}}
+/* Package 006c — operational HR depth */
+.policyGrid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:12px}.policyGrid>div{padding:14px;border:1px solid #dbe4ee;border-radius:12px;background:#f8fafc;display:flex;flex-direction:column;gap:5px}.policyGrid b{font-size:18px;color:#10233f}.policyGrid span,.cellSub{display:block;color:#64748b;font-size:12px;margin-top:4px}.compactTabs{margin-top:4px}.attendanceGridWrap{overflow:auto;max-width:100%}.attendanceGrid{border-collapse:separate;border-spacing:0;min-width:760px;width:100%}.attendanceGrid th,.attendanceGrid td{padding:9px;border-right:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;text-align:center}.attendanceGrid th:first-child,.attendanceGrid td:first-child{position:sticky;left:0;background:#fff;text-align:left;z-index:1;min-width:170px}.attBadge{display:inline-flex;align-items:center;justify-content:center;min-width:30px;padding:5px 8px;border-radius:999px;font-size:11px;font-weight:850;text-transform:capitalize;white-space:nowrap}.att-present{background:#dcfce7;color:#166534}.att-late{background:#fef3c7;color:#92400e}.att-absent{background:#fee2e2;color:#991b1b}.att-on_leave{background:#dbeafe;color:#1d4ed8}.att-half_day{background:#ede9fe;color:#6d28d9}.att-holiday{background:#cffafe;color:#155e75}.att-off_day,.att-none{background:#e5e7eb;color:#475569}.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}@media(max-width:1000px){.policyGrid{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){.policyGrid{grid-template-columns:1fr 1fr}.compactTabs{grid-template-columns:1fr 1fr!important}}
+
+/* 007e4: compact component catalogue + A4 payslip */
+.componentCatalogueTable th,.componentCatalogueTable td{padding:10px 8px;font-size:12px;white-space:nowrap}.componentCatalogueTable .componentName{white-space:normal;min-width:150px}.componentCatalogueTable .actionCell{width:78px}.catalogueFilters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.catalogueFilters button{padding:8px 12px}.editDrawerBackdrop{position:fixed;inset:0;background:rgba(15,23,42,.35);z-index:70;display:flex;justify-content:flex-end}.editDrawer{width:min(560px,96vw);height:100%;overflow:auto;background:#fff;padding:24px;box-shadow:-12px 0 32px rgba(15,23,42,.18)}.editDrawerHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:18px}.editDrawer .gridForm{grid-template-columns:repeat(2,minmax(0,1fr))}.editDrawer .drawerActions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.payslipList{display:grid;gap:10px}.payslipRow{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #dce5ef;border-radius:10px;padding:12px 14px}.payslipRowActions{display:flex;gap:8px}.payslipPreviewShell{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:80;overflow:auto;padding:24px}.payslipPreviewToolbar{max-width:210mm;margin:0 auto 12px;display:flex;justify-content:flex-end;gap:8px}.a4Payslip{width:210mm;min-height:297mm;margin:0 auto;background:#fff;padding:14mm 15mm;box-sizing:border-box;color:#14213d;box-shadow:0 10px 40px rgba(0,0,0,.25);font-size:12px}.payslipCompany{text-align:center;border-bottom:2px solid #1f6aa5;padding-bottom:12px}.payslipCompany h1{font-size:22px;margin:0 0 5px}.payslipCompany p{margin:2px 0}.payslipTitle{text-align:center;margin:16px 0}.payslipTitle h2{font-size:24px;margin:0}.payslipTitle b{display:block;margin-top:4px}.payslipDetails{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}.payslipInfoBox{border:1px solid #cbd9e8;border-radius:6px;overflow:hidden}.payslipInfoLine{display:grid;grid-template-columns:42% 58%;padding:6px 9px;border-bottom:1px solid #e6edf5}.payslipInfoLine:last-child{border-bottom:0}.payslipInfoLine span:first-child{font-weight:700}.paySection{margin-top:14px;border:1px solid #cbd9e8;border-radius:6px;overflow:hidden}.paySection h3{margin:0;padding:8px 10px;background:#e8f3fb;font-size:13px}.paySection table{width:100%;border-collapse:collapse}.paySection th,.paySection td{padding:7px 10px;border-bottom:1px solid #e7edf4;text-align:left}.paySection th:last-child,.paySection td:last-child{text-align:right}.paySection tfoot td{font-weight:800;background:#f6f9fc}.deductionGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.netPayBox{margin-top:16px;padding:13px 16px;border:1px solid #82c9a9;background:#e8f8f0;display:flex;justify-content:space-between;font-size:19px;font-weight:900;border-radius:6px}.employerInfo{margin-top:14px;padding:10px 12px;background:#f6f8fb;border:1px solid #dce5ef;border-radius:6px}.payslipFoot{margin-top:26px;border-top:1px solid #9fb2c8;padding-top:12px;text-align:center;color:#64748b;font-size:10px}@media(max-width:900px){.editDrawer .gridForm{grid-template-columns:1fr}.a4Payslip{width:100%;min-height:auto;padding:20px}.payslipDetails,.deductionGrid{grid-template-columns:1fr}.payslipPreviewShell{padding:8px}}
+@media print{body *{visibility:hidden!important}.a4Payslip,.a4Payslip *{visibility:visible!important}.a4Payslip{position:absolute;left:0;top:0;width:210mm;min-height:297mm;margin:0;box-shadow:none;padding:12mm 14mm}.payslipPreviewShell{position:static;background:#fff;padding:0}.payslipPreviewToolbar{display:none!important}@page{size:A4 portrait;margin:0}}
+
+/* 007e4a — professional Settings navigation, component actions and edit drawer */
+.settingsPrimaryTabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;padding:6px;background:#eaf0f7;border:1px solid #d6e0eb;border-radius:13px;width:max-content;max-width:100%}
+.settingsPrimaryTabs button{appearance:none;border:0!important;background:transparent!important;color:#526277!important;font-weight:750;padding:9px 15px!important;border-radius:9px!important;box-shadow:none!important;cursor:pointer}
+.settingsPrimaryTabs button:hover{background:#fff!important;color:#174f85!important}
+.settingsPrimaryTabs button.active{background:#1976d2!important;color:#fff!important;box-shadow:0 2px 7px rgba(25,118,210,.18)!important}
+.settingTiles{display:flex!important;gap:8px!important;flex-wrap:wrap!important;margin-top:14px!important}
+.settingTiles>div{border:1px solid #d5e0ec!important;background:#f7f9fc!important;color:#41556d!important;border-radius:999px!important;padding:8px 12px!important;font-size:12px!important;font-weight:750!important;line-height:1.2!important}
+.settingTiles>div:hover{background:#edf5fd!important;border-color:#9bc4eb!important;color:#145a91!important}
+.catalogueFilters{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:6px;background:#f2f6fa;border:1px solid #dde6ef;border-radius:12px;margin-bottom:14px}
+.catalogueFilters button{border:1px solid transparent!important;background:transparent!important;color:#50647b!important;border-radius:8px!important;font-weight:750!important;padding:8px 12px!important}
+.catalogueFilters button:hover{background:#fff!important;color:#176d5a!important}
+.catalogueFilters button.active{background:#1c806a!important;color:#fff!important}
+.catalogueFilters input{margin-left:auto;min-width:220px;flex:1 1 240px;max-width:360px;border:1px solid #cfd8e3;border-radius:8px;padding:9px 11px;background:#fff}
+.componentCatalogueTable .actionCell{width:148px;min-width:148px}
+.catalogueActions{display:flex;gap:7px;align-items:center;white-space:nowrap}
+.catalogueActions button{border:0;border-radius:8px;padding:8px 10px;font-size:12px;font-weight:800;color:#fff;cursor:pointer}
+.catalogueActions .btnEdit{background:#1976d2!important}.catalogueActions .btnEdit:hover{background:#125fa9!important}
+.catalogueActions .btnEnable{background:#16845f!important}.catalogueActions .btnEnable:hover{background:#106c4d!important}
+.catalogueActions .btnDisable{background:#c2413b!important}.catalogueActions .btnDisable:hover{background:#a5322d!important}
+.statusBadge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:800}.statusActive{background:#dcfce7;color:#166534}.statusDisabled{background:#f1f5f9;color:#64748b}
+.editDrawerBackdrop{align-items:stretch}
+.editDrawer{width:min(620px,96vw)!important;height:100%!important;overflow:auto!important;background:#fff!important;color:#172033!important;padding:26px!important;display:block!important}
+.editDrawerHead{padding-bottom:14px;border-bottom:1px solid #e4eaf1;margin-bottom:20px}.editDrawerHead h3{margin:0 0 4px;color:#172033}.editDrawerHead p{margin:0;color:#718096}.editDrawerHead .ghost{color:#34465a!important;background:#fff!important}
+.editDrawer .gridForm{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px 16px!important;margin:0!important}
+.editDrawer .gridForm label{display:grid!important;gap:6px!important;margin:0!important;color:#34465a!important;font-size:12px!important;font-weight:800!important;min-width:0!important}
+.editDrawer .gridForm input,.editDrawer .gridForm select{width:100%!important;min-width:0!important;height:42px!important;border:1px solid #cbd6e2!important;border-radius:8px!important;padding:8px 10px!important;background:#fff!important;color:#172033!important}
+.editDrawer .drawerActions{position:sticky;bottom:-26px;background:#fff;border-top:1px solid #e4eaf1;padding:16px 0 4px;margin-top:22px!important}.editDrawer .drawerActions button{border:0;border-radius:8px;padding:10px 14px;font-weight:800}.editDrawer .drawerActions .ghost{border:1px solid #cfd8e3!important;background:#fff!important;color:#475569!important}.editDrawer .drawerActions button:not(.ghost){background:#16845f!important;color:#fff!important}
+@media(max-width:700px){.settingsPrimaryTabs{width:100%;display:grid;grid-template-columns:1fr 1fr}.settingsPrimaryTabs button{width:100%}.settingTiles{display:grid!important;grid-template-columns:1fr 1fr!important}.settingTiles>div{border-radius:9px!important}.catalogueFilters{align-items:stretch}.catalogueFilters input{max-width:none;width:100%;flex-basis:100%}.editDrawer{width:100%!important;padding:18px!important}.editDrawer .gridForm{grid-template-columns:1fr!important}.catalogueActions{flex-direction:column;align-items:stretch}.componentCatalogueTable .actionCell{min-width:92px;width:92px}}
+/* 008 modular domain navigation */
+.navHeading{letter-spacing:.08em;font-size:.72rem;font-weight:800;opacity:.72;margin:18px 12px 7px}
+.sideFoot small{text-transform:capitalize}
+@media(max-width:900px){.settingsPrimaryTabs{display:flex;gap:8px;overflow-x:auto}.settingTiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Package 008a — compact payroll setup/report controls */
+/* Native checkboxes must never inherit normal text-input dimensions/padding. */
+.panel input[type="checkbox"],
+.panel .check input[type="checkbox"],
+.fieldPicker input[type="checkbox"]{
+  appearance:auto!important;
+  -webkit-appearance:checkbox!important;
+  width:16px!important;
+  height:16px!important;
+  min-width:16px!important;
+  max-width:16px!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:3px!important;
+  box-shadow:none!important;
+  flex:0 0 16px!important;
+  vertical-align:middle!important;
+}
+
+/* PAYE editor: readable accounting table instead of full-screen fields. */
+.panel .cellInput{width:170px!important;max-width:100%!important;height:38px;padding:7px 9px!important}
+.panel .tableWrap:has(.cellInput){max-width:780px}
+.panel .tableWrap:has(.cellInput) table{min-width:620px}
+.panel .tableWrap:has(.cellInput) th:nth-child(1),
+.panel .tableWrap:has(.cellInput) td:nth-child(1){width:80px}
+.panel .tableWrap:has(.cellInput) th:nth-child(2),
+.panel .tableWrap:has(.cellInput) td:nth-child(2){width:260px}
+.panel .tableWrap:has(.cellInput) th:nth-child(3),
+.panel .tableWrap:has(.cellInput) td:nth-child(3){width:190px}
+
+/* Payroll Setup is intentionally grouped into Statutory and System setup. */
+.payrollSetupGroups{display:grid;gap:18px;background:transparent;border:0;box-shadow:none;padding:0}
+.setupGroup{background:#fff;border:1px solid #e1e8f0;border-radius:14px;padding:18px}
+.setupGroupHead{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:12px}
+.setupGroupHead h3{margin:3px 0 5px}
+.setupEyebrow{font-size:11px;letter-spacing:.08em;font-weight:850;color:#1d4ed8}
+.settingTiles{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:12px 0!important}
+.settingTiles>div{display:inline-flex!important;align-items:center!important;width:auto!important;min-height:36px!important;padding:8px 12px!important;border:1px solid #cdd9e7!important;border-radius:9px!important;background:#f8fafc!important;color:#24405f!important;font-size:12px!important;font-weight:750!important}
+.statutoryRuleSummary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.statRuleCard{border:1px solid #e1e8f0;border-radius:10px;padding:12px;background:#fbfdff;display:grid;gap:5px;min-width:0}
+.statRuleCard b{font-size:13px;color:#183b63}.statRuleCard span{font-size:12px;color:#52647a;line-height:1.45;overflow-wrap:anywhere}.statRuleCard small{font-size:11px;color:#8290a3}
+
+/* Payroll report filters: compact desktop grid, responsive below. */
+.filterBar{display:grid!important;grid-template-columns:150px 150px minmax(190px,1.25fr) minmax(180px,1fr) 150px auto!important;gap:10px!important;align-items:end!important;max-width:1100px!important}
+.filterBar label{margin:0!important;min-width:0!important;display:grid!important;gap:5px!important}
+.filterBar input,.filterBar select{width:100%!important;min-width:0!important;height:40px!important;padding:7px 9px!important}
+.filterBar>button{height:40px!important;white-space:nowrap!important;align-self:end!important}
+.reportBuilder{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:18px;align-items:start}
+.reportBuilder>label{margin:0!important}.reportBuilder>label select{width:100%;height:40px}
+.fieldPicker{display:grid!important;grid-template-columns:repeat(4,minmax(145px,1fr))!important;gap:8px 12px!important;align-items:center!important}
+.fieldPicker .check{display:flex!important;flex-direction:row!important;align-items:center!important;gap:7px!important;margin:0!important;padding:7px 8px!important;min-height:34px!important;border:1px solid #e2e8f0!important;border-radius:8px!important;background:#fafcff!important;font-size:12px!important;font-weight:650!important;color:#334155!important}
+
+@media(max-width:1100px){
+  .filterBar{grid-template-columns:repeat(3,minmax(0,1fr))!important;max-width:none!important}
+  .fieldPicker{grid-template-columns:repeat(3,minmax(135px,1fr))!important}
+}
+@media(max-width:760px){
+  .statutoryRuleSummary{grid-template-columns:1fr}
+  .filterBar{grid-template-columns:1fr 1fr!important}
+  .reportBuilder{grid-template-columns:1fr}
+  .fieldPicker{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:520px){
+  .filterBar,.fieldPicker{grid-template-columns:1fr!important}
+  .panel .tableWrap:has(.cellInput){max-width:100%}
+}
+
+/* 008b functional Payroll Setup navigation */
+.payrollSetupNav{padding:14px 16px!important}.setupModeSwitch,.compactSetupNav{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.setupModeSwitch{margin-bottom:10px}.setupModeSwitch button,.compactSetupNav button{width:auto!important;min-width:0!important;padding:7px 12px!important;border-radius:9px!important;font-size:13px!important;line-height:1.2!important;background:#f5f7fb!important;color:#17324d!important;border:1px solid #d7e0eb!important}.setupModeSwitch button.active{background:#173f6b!important;color:#fff!important;border-color:#173f6b!important}.compactSetupNav button.active{background:#16866f!important;color:#fff!important;border-color:#16866f!important}.setupWorkspace{max-width:1050px}.payeCreateRow{display:grid;grid-template-columns:140px 190px max-content;gap:12px;align-items:end;margin:12px 0}.payeCreateRow label{margin:0}.compactTaxTable{max-width:720px}.compactTaxTable table{width:100%}.compactTaxTable .cellInput{max-width:180px}.formActions{display:flex;justify-content:flex-end;gap:10px;margin-top:14px}.setupWorkspace .statutoryRuleSummary{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}.setupWorkspace .statRuleCard{min-width:0}.setupWorkspace input[type="checkbox"]{width:16px!important;height:16px!important;padding:0!important;min-width:16px!important;max-width:16px!important}
+@media(max-width:760px){.payeCreateRow{grid-template-columns:1fr}.compactTaxTable{max-width:100%}.setupModeSwitch,.compactSetupNav{gap:6px}.setupModeSwitch button,.compactSetupNav button{font-size:12px!important;padding:7px 9px!important}.setupWorkspace{max-width:100%}}
+/* 008c compact payroll setup */
+.setupFields{display:grid;grid-template-columns:repeat(2,minmax(0,320px));gap:14px 18px;align-items:end;max-width:720px}
+.setupFields label{display:flex;flex-direction:column;gap:6px;min-width:0;font-weight:600}
+.setupFields input,.setupFields select{width:100%;max-width:320px;box-sizing:border-box}
+.setupFormHead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}
+.compactCheck{display:flex;align-items:center;gap:8px;min-height:38px;font-weight:500}
+.compactCheck input[type=checkbox]{width:16px!important;height:16px!important;min-width:16px!important;max-width:16px!important;padding:0!important;margin:0!important}
+.setupSaveBar{grid-column:1/-1;display:flex;justify-content:flex-start;padding-top:4px}
+.payrollSetupNav{max-width:980px;overflow:hidden}
+.compactSetupNav{display:flex;flex-wrap:wrap;gap:6px}
+.compactSetupNav button{width:auto!important;min-width:0!important;white-space:nowrap;padding:7px 11px!important}
+/* catalogue: keep only essential columns visible; details live in Edit drawer */
+.componentCatalogueTable{max-width:100%;overflow:hidden}
+.componentCatalogueTable table{width:100%;table-layout:fixed}
+.componentCatalogueTable th,.componentCatalogueTable td{padding:9px 7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:900px){.setupFields{grid-template-columns:1fr;max-width:100%}.setupFields input,.setupFields select{max-width:none}.setupSaveBar{grid-column:1}.compactSetupNav button{font-size:12px}.payrollSetupNav{max-width:100%}}
+/* 008e payroll review + payment modal */
+.modalBackdrop{position:fixed;inset:0;background:rgba(15,23,42,.48);display:flex;align-items:center;justify-content:center;padding:20px;z-index:1000}.paymentModal{width:min(760px,96vw);max-height:90vh;overflow:auto;background:#fff;border-radius:16px;box-shadow:0 24px 70px rgba(15,23,42,.28);padding:22px}.modalHead,.modalActions,.paymentSummary,.reviewSignoff{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.modalHead h3{margin:0}.modalHead p{margin:4px 0 0;color:#64748b}.paymentSummary{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px;margin:16px 0}.paymentModal .formGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.paymentModal label{display:grid;gap:6px;font-weight:600}.paymentModal input,.paymentModal select{width:100%;min-width:0}.modalActions{justify-content:flex-end;margin-top:20px}.compactTableWrap{overflow-x:auto;max-width:100%}.reviewSignoff{margin-top:18px;padding-top:14px;border-top:1px solid #e2e8f0;color:#475569}.liabilityRun{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #e2e8f0}@media(max-width:700px){.paymentModal .formGrid{grid-template-columns:1fr}.paymentSummary{align-items:flex-start;flex-direction:column}.liabilityRun{align-items:flex-start;flex-direction:column}}
+
+/* 008e2 visible payroll workflow */
+.payrollWorkflow{background:#fff;border:1px solid #dfe7ef;border-radius:14px;padding:16px;margin:12px 0 18px}.payrollWorkflow p{margin:12px 0 0;color:#64748b}.workflowSteps{display:grid;grid-template-columns:repeat(6,minmax(90px,1fr));gap:8px}.workflowStep{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:10px;background:#f3f6f9;color:#64748b;font-size:12px}.workflowStep span{width:23px;height:23px;border-radius:50%;display:grid;place-items:center;background:#dce4ec;font-weight:800}.workflowStep.current{background:#e8f5f1;color:#126b59;border:1px solid #a8d9cc}.workflowStep.current span,.workflowStep.done span{background:#1c806a;color:#fff}.workflowStep.done{color:#1c806a}.runCard.selectedRun{outline:2px solid #1c806a}.runActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.runActions button{border:0;border-radius:8px;padding:8px 10px;background:#1c806a;color:#fff;font-weight:700;cursor:pointer}.runActions .secondaryBtn{background:#64748b}.payrollReviewPanel{margin-top:18px}.validationBox{display:flex;gap:10px;align-items:center;padding:11px 13px;border-radius:9px;margin:12px 0}.validationBox.ok{background:#ecfdf5;color:#166534;border:1px solid #bbf7d0}.validationBox.hasErrors{background:#fff7ed;color:#9a3412;border:1px solid #fed7aa}.reviewTotals{display:flex;gap:18px;flex-wrap:wrap;padding:12px 0;font-size:13px}.reviewTotals span{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 10px}.reviewFooterActions{display:flex;justify-content:flex-end;gap:10px;margin-top:15px}.reviewFooterActions button{border:0;border-radius:9px;padding:10px 15px;background:#1c806a;color:#fff;font-weight:800}.reviewFooterActions button:disabled,.toolbar button:disabled{opacity:.5;cursor:not-allowed}.postedNext{width:100%;padding:12px 14px;border-radius:9px;background:#eef6ff;border:1px solid #cfe2fb;color:#24557a}.secondaryBtn{background:#64748b!important}
+@media(max-width:900px){.workflowSteps{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.workflowSteps{grid-template-columns:1fr 1fr}.workflowStep{min-width:0}.reviewFooterActions{justify-content:stretch}.reviewFooterActions button{width:100%}}
+
+.runActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.runActions .dangerBtn{background:#b42318!important;color:#fff!important}.runActions .dangerBtn:hover{background:#912018!important}
+/* 008e4 payroll review workspace, toast and confirmation */
+.appToast{position:fixed;right:22px;top:22px;z-index:2200;max-width:min(430px,calc(100vw - 44px));background:#0f766e;color:#fff;padding:13px 16px;border-radius:11px;box-shadow:0 16px 38px rgba(15,23,42,.28);font-weight:700}.confirmModal{width:min(520px,94vw);background:#fff;border-radius:15px;padding:22px;box-shadow:0 24px 70px rgba(15,23,42,.3)}.confirmModal h3{margin-top:0}.confirmModal p{line-height:1.55;color:#475569}.dangerBtn{background:#b42318!important;color:#fff!important}.reviewWorkspaceTabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.reviewWorkspaceTabs span{padding:8px 11px;border:1px solid #dbe4ec;border-radius:9px;background:#f8fafc;font-size:12px;font-weight:800;color:#52606d}.reviewWorkspaceTabs span.active{background:#e8f5f1;border-color:#9dd5c6;color:#126b59}.reviewWorkspaceTabs b{margin-left:5px}.payrollReviewPanel .compactTableWrap{max-width:100%;overflow:auto}.payrollReviewPanel table{font-size:12px}.payrollReviewPanel th,.payrollReviewPanel td{padding:9px 8px;white-space:nowrap}
+
+/* 008e8 recurring payroll assignments */
+.compactRecurringList{display:grid;gap:8px;margin:12px 0}.recurringRow{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #dbe4ef;border-radius:10px;padding:10px 12px;background:#fff}.recurringRow>div:first-child{display:flex;flex-direction:column;gap:3px}.recurringRow small{color:#64748b}.rowActions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.recurringAssignForm{display:grid;grid-template-columns:minmax(180px,2fr) minmax(120px,1fr) minmax(150px,1fr) auto;gap:10px;align-items:end;margin-top:12px;padding:12px;border:1px solid #cfe0ef;border-radius:10px;background:#f8fbff}.recurringAssignForm label{display:grid;gap:5px}.recurringSaveActions{padding-bottom:1px}.emptyState{padding:12px;border:1px dashed #cbd5e1;border-radius:9px;color:#64748b;margin-top:10px}@media(max-width:850px){.recurringAssignForm{grid-template-columns:1fr 1fr}.recurringRow{align-items:flex-start}}@media(max-width:560px){.recurringAssignForm{grid-template-columns:1fr}.recurringRow{flex-direction:column}.recurringRow .rowActions{width:100%}}
+
+/* 009a Payroll classification, pension review and professional payroll actions */
+.workspaceTabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}.workspaceTabs button{background:#eef4ff;color:#174ea6;border:1px solid #cfe0ff}.workspaceTabs button.active{background:#1769e0;color:#fff;border-color:#1769e0}
+.classificationSelector{display:flex;gap:18px;align-items:end;flex-wrap:wrap}.classificationSelector>label{min-width:300px}.classificationIdentity{display:grid;grid-template-columns:repeat(4,minmax(135px,1fr));gap:10px;flex:1}.classificationIdentity>div{background:#f7f9fc;border:1px solid #e5eaf2;border-radius:10px;padding:10px 12px}.classificationIdentity small,.classCard small{display:block;color:#667085;margin-bottom:4px}
+.pensionReviewWarning{display:flex;gap:12px;align-items:flex-start;background:#fff8e6;border:1px solid #f2c94c;border-left:5px solid #e5a000;border-radius:12px;padding:14px 16px;margin:0 0 16px}.pensionReviewWarning p{margin:4px 0 0;color:#694f00}.reviewIcon{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#e5a000;color:#fff;font-weight:800;flex:0 0 auto}
+.classificationForm{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px}.classificationForm .wide{grid-column:span 2}.classificationActions{display:flex;align-items:end}.classificationActions button{width:100%;background:#1769e0}
+.classificationCards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 16px}.classCard{border-radius:12px;padding:15px;border:1px solid}.classCard b{display:block;font-size:17px;margin:3px 0 6px}.classCard span{font-size:12px;color:#667085}.classCard.tax{background:#eef6ff;border-color:#b9d8ff}.classCard.pension{background:#f4f0ff;border-color:#d7c7ff}.classCard.tier3{background:#edf9f2;border-color:#bce7cd}
+.deactivateButton{background:#fff4e5!important;color:#a65b00!important;border:1px solid #f4c27a!important}.deactivateButton:hover{background:#ffe8c7!important}
+@media(max-width:900px){.classificationIdentity{grid-template-columns:repeat(2,1fr)}.classificationForm{grid-template-columns:1fr 1fr}.classificationCards{grid-template-columns:1fr}.classificationForm .wide{grid-column:span 2}}
+@media(max-width:620px){.classificationSelector>label{min-width:100%;width:100%}.classificationIdentity{grid-template-columns:1fr 1fr;width:100%}.classificationForm{grid-template-columns:1fr}.classificationForm .wide{grid-column:span 1}.workspaceTabs button{flex:1 1 100%}}
+
+/* 009b Tier 3 / PF resolved organization defaults + employee values */
+.tier3EmployeePanel{border-top:4px solid #14804a}.tier3Resolution{display:inline-flex;align-items:center;border-radius:999px;padding:7px 11px;font-weight:800;font-size:12px}.tier3Resolution.on{background:#e9f8ef;color:#11713f}.tier3Resolution.off{background:#fff1e6;color:#a45100}
+.tier3PolicyStrip{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:10px;margin:14px 0}.tier3PolicyStrip>div{background:#f7f9fc;border:1px solid #e4eaf2;border-radius:10px;padding:11px}.tier3PolicyStrip small,.tier3Preview small{display:block;color:#667085;margin-bottom:4px}
+.tier3EmployeeForm{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:13px;align-items:end}.tier3EmployeeForm label small{display:block;color:#667085;font-size:11px;margin-top:4px}.tier3EmployeeForm input:disabled{background:#f2f4f7;color:#667085}.tier3Save button{width:100%;background:#14804a}
+.tier3Preview{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.tier3Preview>div{background:#f0faf4;border:1px solid #c9ead7;border-radius:10px;padding:12px}.tier3Preview b{display:block;font-size:17px}.tier3Preview span{display:block;color:#667085;font-size:11px;margin-top:4px}.tier3Explanation{margin-top:12px;background:#fff8e8;border:1px solid #f2d08a;border-radius:9px;padding:10px 12px;color:#71520a}
+@media(max-width:900px){.tier3PolicyStrip{grid-template-columns:1fr 1fr}.tier3EmployeeForm{grid-template-columns:1fr 1fr}.tier3Preview{grid-template-columns:1fr}}
+@media(max-width:620px){.tier3PolicyStrip,.tier3EmployeeForm{grid-template-columns:1fr}}
+
+/* 009b2 strict Tier 3 rate-source precedence */
+.tier3ConfigWarning{display:flex;flex-direction:column;gap:3px;background:#fff5e8;border:1px solid #f1bf75;border-left:4px solid #d97706;border-radius:9px;padding:10px 12px;margin:10px 0;color:#7a4600}.tier3ConfigWarning span{font-size:12px}
+.tier3RateSource{display:inline-flex;gap:8px;align-items:center;background:#eef5ff;border:1px solid #c9dcff;border-radius:999px;padding:6px 10px;margin:0 0 12px;font-size:12px;color:#244b82}.tier3RateSource span{color:#667085}.rateSourceOrg{color:#175cd3!important;font-weight:700}.rateSourceEmployee{color:#067647!important;font-weight:700}
+
+/* 009b3 setup save feedback */
+.setupSaveBar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.setupInlineFeedback{font-size:12px;font-weight:700;padding:7px 10px;border-radius:8px}
+.setupInlineFeedback.ok{background:#eaf8ef;color:#087443;border:1px solid #b9e3c9}
+.setupInlineFeedback.error{background:#fff0f0;color:#b42318;border:1px solid #f4c7c7}
+.setupSaveBar button:disabled{opacity:.65;cursor:not-allowed}
+
+/* 009b4 Tier 3 clarity and conditional actions */
+.tier3HeadActions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tier3RefreshBtn{padding:6px 10px!important;font-size:12px!important}
+.tier3OptInInfo{display:flex;flex-direction:column;gap:3px;background:#eef6ff;border:1px solid #bfd7ff;border-left:4px solid #2563eb;border-radius:9px;padding:10px 12px;margin:0 0 12px;color:#173f73}
+.tier3OptInInfo span{font-size:12px}
+.tier3NoSeparateSave{margin-top:12px;background:#f8fafc;border:1px solid #dce3ec;border-radius:9px;padding:10px 12px;color:#475467;font-size:12px}
+
+/* 009b5 payroll month + correct Tier 3 setup source */
+.classificationSelector{display:block}
+.classificationTopSelectors{display:grid;grid-template-columns:minmax(260px,1fr) minmax(240px,340px);gap:16px;align-items:end;margin-bottom:16px}
+.classificationTopSelectors label{min-width:0}
+.classificationTopSelectors select{width:100%}
+@media(max-width:700px){.classificationTopSelectors{grid-template-columns:1fr}.classificationTopSelectors label{width:100%}}
+
+/* 009b6 remove duplicate organization-default contribution fields */
+.tier3ParticipationSummary{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:#f8fafc;border:1px solid #dce3ec;border-radius:10px;padding:12px;margin:10px 0 14px}
+.tier3ParticipationSummary>div{background:#fff;border:1px solid #e7ebf0;border-radius:8px;padding:9px 11px}
+.tier3ParticipationSummary small{display:block;color:#667085;margin-bottom:3px}
+.tier3ParticipationSummary p{grid-column:1/-1;margin:0;color:#475467;font-size:12px}
+.tier3ExclusionAction{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:12px;margin:10px 0 14px}
+.tier3ExclusionAction div{display:flex;flex-direction:column;gap:3px}.tier3ExclusionAction span{font-size:12px;color:#7c4a03}.tier3ExclusionAction button{background:#b45309}
+@media(max-width:620px){.tier3ParticipationSummary{grid-template-columns:1fr}.tier3ParticipationSummary p{grid-column:1}.tier3ExclusionAction{align-items:stretch;flex-direction:column}}
+
+/* 009b7 clear save feedback and non-duplicated Tier 3 enrollment */
+.classificationActions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.classificationSaveFeedback{font-size:12px;font-weight:700;border-radius:8px;padding:7px 10px}
+.classificationSaveFeedback.ok{background:#eaf8ef;border:1px solid #b7e2c8;color:#087443}
+.classificationSaveFeedback.info{background:#eef5ff;border:1px solid #c8d9f4;color:#244b82}
+
+/* 009b9 definitive Tier 3 employee participation */
+.tier3EmployeeForm{margin-top:12px}
+
+/* 009c clearer pay frequency and optional Tier 3 overrides */
+.fieldHelp{display:block;margin-top:5px;color:#667085;font-size:11px;line-height:1.35}
+
+/* 009e payroll review, bonus and staff salary accounts */
+.tier3AppliedNote{display:flex;flex-direction:column;gap:4px;padding:11px 13px;border:1px solid #bfe3ce;background:#f1fbf5;border-radius:10px;margin:10px 0}.tier3AppliedNote span{font-size:12px;color:#475467}.bonusQuickForm{display:grid;grid-template-columns:minmax(180px,240px) minmax(260px,1fr) auto;gap:12px;align-items:end}.bonusPeriodTotal{padding:8px 10px;border-radius:8px;background:#f7f9fc}.columnPickerWrap{position:relative}.columnPickerMenu{position:absolute;right:0;top:42px;z-index:30;width:240px;max-height:390px;overflow:auto;background:white;border:1px solid #d7deea;border-radius:10px;box-shadow:0 12px 30px #0002;padding:10px}.columnPickerMenu label{display:flex;align-items:center;gap:8px;padding:6px;font-size:12px}.columnPickerMenu input{width:auto}.staffStatementGenerate{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 14px}.staffStatementPanel{border-top:3px solid #1d7f62}.staffStatementPanel .confirmModal label{display:block;margin:10px 0}.staffStatementPanel .confirmModal input{width:100%}@media(max-width:760px){.bonusQuickForm{grid-template-columns:1fr}.reviewToolbarActions{flex-wrap:wrap}}
+
+/* 009e2 Payroll Overview heading selection */
+.payrollOverviewHeadingSelector{margin:0 0 14px;padding:14px;border:1px solid #d8e2ef;border-radius:12px;background:#f8fbff}.headingSelectorTitle{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.headingSelectorTitle>div:first-child{display:flex;flex-direction:column;gap:3px}.headingSelectorTitle span{font-size:12px;color:#64748b}.headingSelectorGrid{display:grid;grid-template-columns:repeat(4,minmax(145px,1fr));gap:8px}.headingSelectorGrid label{display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid #dce5f0;border-radius:8px;background:white;font-size:12px;font-weight:600}.headingSelectorGrid input{width:15px;height:15px;flex:0 0 auto}@media(max-width:900px){.headingSelectorGrid{grid-template-columns:repeat(2,minmax(140px,1fr))}.headingSelectorTitle{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.headingSelectorGrid{grid-template-columns:1fr}}
+/* 009e3: compact Accounts Review overview */
+.compactViewOptions{padding:12px 14px;margin-bottom:12px}
+.compactViewOptions .headingSelectorTitle{gap:12px;align-items:center}
+.compactOptionGrid{display:grid;grid-template-columns:repeat(4,minmax(145px,1fr));gap:8px;margin-top:10px}
+.compactOptionGrid label{display:flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid #d9e2ef;border-radius:7px;background:#f8fafc;font-size:.82rem}
+.compactOptionGrid input{width:14px;height:14px;margin:0}
+@media(max-width:900px){.compactOptionGrid{grid-template-columns:repeat(2,minmax(140px,1fr))}}
+@media(max-width:560px){.compactOptionGrid{grid-template-columns:1fr}}
+
+/* 009e6a: payslip amount-column visibility and total-row hardening */
+.a4Payslip .paySection table{table-layout:fixed!important}
+.a4Payslip .paySection td:first-child{width:72%!important}
+.a4Payslip .paySection td:last-child,.a4Payslip .paySection .payslipAmount{width:28%!important;text-align:right!important;color:#111827!important;font-variant-numeric:tabular-nums!important;white-space:nowrap!important;visibility:visible!important;opacity:1!important}
+.a4Payslip .paySection tfoot td{font-weight:900!important;background:#f1f5f9!important;border-top:1px solid #cbd5e1!important}
+.a4Payslip .paySection tfoot td:last-child{font-size:13px!important}
+/* 009e7 payslip amount hardening + professional salary accounts */
+.a4Payslip .deductionGrid .paySection table{width:100%!important;table-layout:fixed!important}
+.a4Payslip .deductionGrid .paySection tr{display:table-row!important}
+.a4Payslip .deductionGrid .paySection td{display:table-cell!important;visibility:visible!important;opacity:1!important}
+.a4Payslip .deductionGrid .paySection td:first-child{width:70%!important}
+.a4Payslip .deductionGrid .paySection td.payslipAmount{width:30%!important;min-width:88px!important;text-align:right!important;color:#0f172a!important;font-weight:600!important;padding-right:10px!important}
+.a4Payslip .deductionGrid .paySection tfoot td.payslipAmount{font-weight:900!important}
+.paymentGroupTabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.paymentGroupTabs button{background:#eef3f8;color:#334155;border:1px solid #d6e0ea}.paymentGroupTabs button.active{background:#0f766e;color:#fff;border-color:#0f766e}.salaryFilters{margin:10px 0 14px}.salaryAccountCards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0 16px}.salaryAccountCards>div{border:1px solid #dbe5ef;border-radius:9px;padding:12px;background:#f8fafc}.salaryAccountCards span{display:block;color:#64748b;font-size:12px;margin-bottom:5px}.salaryAccountCards b{font-size:18px;color:#0f172a}.staffStatementGenerate{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border:1px solid #dbe5ef;background:#f8fafc;border-radius:8px;padding:10px;margin:10px 0}.statementRequestBar{display:grid;grid-template-columns:minmax(260px,1fr) minmax(220px,320px) auto;gap:10px;align-items:center;border:1px solid #b9d9cf;background:#f0fdf8;border-radius:8px;padding:12px;margin:12px 0}.statementRequestBar span{color:#64748b;font-size:12px}@media(max-width:900px){.salaryAccountCards{grid-template-columns:1fr 1fr}.statementRequestBar{grid-template-columns:1fr}.paymentGroupTabs{overflow-x:auto;flex-wrap:nowrap}.paymentGroupTabs button{white-space:nowrap}}
+
+/* 009e8: reliable single-payslip money rows + bulk regular salary payment */
+.payslipMoneyRows{display:grid}.payslipMoneyRows>div{display:flex!important;align-items:center;justify-content:space-between;gap:18px;padding:7px 10px;border-bottom:1px solid #e7edf4}.payslipMoneyRows>div span{min-width:0}.payslipMoneyRows>div b{display:block!important;min-width:92px;text-align:right!important;color:#0f172a!important;visibility:visible!important;opacity:1!important;font-variant-numeric:tabular-nums;white-space:nowrap}.payslipMoneyRows>div.total{font-weight:900;background:#f1f5f9;border-top:1px solid #cbd5e1}.payslipMoneyRows>div.total b{font-weight:900}.bulkSalaryBar{display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px solid #99d5c5;background:#effcf7;border-radius:9px;padding:12px 14px;margin:12px 0}.bulkSalaryBar span{display:block;color:#64748b;font-size:12px;margin-top:3px}@media(max-width:800px){.bulkSalaryBar{align-items:stretch;flex-direction:column}}
+
+/* 009e9 regular staff salary-account selection */
+.salaryAccountTableWrap{overflow-x:auto;width:100%;margin-top:12px}.salaryAccountTable{width:100%;border-collapse:collapse}.salaryAccountTable th,.salaryAccountTable td{padding:10px 12px;vertical-align:middle}.salaryAccountTable .selectCol{width:42px;text-align:center}.salaryAccountTable input[type=checkbox]{width:16px;height:16px;accent-color:#0f8a72}.bulkSalaryBar{align-items:center}.bulkSalaryBar button:disabled{opacity:.55;cursor:not-allowed}
+
+/* 009g professional staff salary accounts */
+.bulkSalaryPanel{border:1px solid #b9d9cf;background:#f0fdf8;border-radius:10px;padding:12px;margin:12px 0}.bulkSalaryIntro{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}.bulkSalaryIntro span{font-size:12px;color:#64748b}.bulkSalaryFields{display:grid;grid-template-columns:minmax(145px,180px) minmax(160px,210px) minmax(220px,1fr) auto;gap:10px;align-items:end}.bulkSalaryFields label,.statementProfessional label{font-size:12px;color:#475569}.bulkSalaryFields input,.bulkSalaryFields select,.statementProfessional input{width:100%;margin-top:4px}.statementProfessional{grid-template-columns:minmax(240px,1fr) minmax(210px,280px) 145px 145px auto auto}.paymentDetailModal select{width:100%}.salaryAccountTable tbody tr:hover{background:#f8fafc}@media(max-width:1100px){.bulkSalaryFields{grid-template-columns:1fr 1fr}.statementProfessional{grid-template-columns:1fr 1fr}}@media(max-width:700px){.bulkSalaryFields,.statementProfessional{grid-template-columns:1fr}.salaryAccountCards{grid-template-columns:1fr}.salaryAccountTable{min-width:980px}}
+
+/* 009g2: persistent payment posting feedback */
+.inlinePaymentFeedback{margin:0 0 14px;padding:12px 14px;border:1px solid #b9ddd5;border-radius:10px;background:#f0fbf8;line-height:1.45}
+
+/* 009h1: clear document actions and salary-adjustment review */
+.pdfActionBtn{background:#b42318!important;color:#fff!important}.pdfActionBtn:hover{background:#8f1d14!important}.excelActionBtn{background:#16845b!important;color:#fff!important}.excelActionBtn:hover{background:#116a49!important}.approveActionBtn{background:#1d4ed8!important;color:#fff!important}.salaryAdjustmentPreview{margin:18px 0;padding:16px;border:1px solid #bfd7ef;border-radius:14px;background:#f8fbff}.previewHead{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.previewHead h3{margin:0 0 4px}.previewHead p{margin:0;color:#64748b}.previewActions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.previewMetrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}.previewMetrics>div{background:#fff;border:1px solid #dbe7f3;border-radius:10px;padding:11px}.previewMetrics span{display:block;color:#64748b;font-size:12px}.previewMetrics b{display:block;margin-top:4px;font-size:16px}.previewWarning{margin-top:12px;padding:10px 12px;background:#fff7ed;border:1px solid #fed7aa;border-radius:9px;color:#9a3412}@media(max-width:900px){.previewHead{flex-direction:column}.previewActions{justify-content:flex-start}.previewMetrics{grid-template-columns:1fr 1fr}}@media(max-width:600px){.previewMetrics{grid-template-columns:1fr}}
+
+/* 009h2 salary adjustment audit/reversal controls */
+.reversalControl{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.reversalControl input{min-width:260px}.dangerActionBtn{background:#b42318!important;color:#fff!important;border-color:#b42318!important}.salaryAdjustmentPreview{scroll-margin-top:18px}
+
+.batchActionGroup{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.dangerOutlineBtn{background:#fff!important;color:#b42318!important;border:1px solid #b42318!important}.dangerOutlineBtn:hover{background:#fff1f2!important}.statementProfessional .pdfActionBtn,.statementProfessional .excelActionBtn{min-width:116px}
+
+/* 009h4: visible reversal execution feedback */
+.reversalControl{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.reversalControl input{min-width:320px;flex:1}
+.reversalInlineStatus{flex-basis:100%;padding:10px 12px;border-radius:8px;background:#fff4e5;border:1px solid #f2c078;color:#8a3b00;font-weight:700}
+.reversalControl button:disabled{opacity:.65;cursor:wait}
+
+/* 010 cross-industry Performance Management System */
+.pmsTabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;padding:6px;background:#eef3f8;border:1px solid #dbe4ee;border-radius:12px}.pmsTabs button{border:0;border-radius:8px;padding:9px 12px;background:transparent;color:#475569;font-weight:800;cursor:pointer}.pmsTabs button.selected{background:#1976d2;color:#fff}.pmsPillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0}.pmsPillars>div{display:flex;flex-direction:column;gap:7px;padding:16px;border:1px solid #dbe4ee;border-radius:12px;background:#f8fafc}.pmsPillars strong{font-size:25px;color:#1d4ed8}.pmsPillars span,.pmsPillars small{color:#64748b}.pmsScorecard{border-top:4px solid #1976d2}.pmsComposite{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px;border-radius:11px;background:#edf7f4;border:1px solid #c6e6dc}.pmsComposite strong{font-size:28px;color:#126b59}.pmsComposite span{font-weight:800;color:#334155}.decisionMatrix{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.decisionMatrix button{background:#1d4ed8}.panel textarea{border:1px solid #cfd8e3;border-radius:8px;padding:10px;background:#fff;font:inherit;box-sizing:border-box;width:100%}@media(max-width:850px){.pmsPillars{grid-template-columns:1fr}.pmsTabs{display:grid;grid-template-columns:1fr 1fr}.decisionMatrix button{width:100%;justify-content:center}}@media(max-width:520px){.pmsTabs{grid-template-columns:1fr}}
+.pmsScoreInput{width:90px!important;padding:7px!important}
+
+/* 010t employee edit workspace */
+.employeeEditPanel{margin:18px 0 24px;padding:20px;border:1px solid #d9e2ec;border-radius:14px;background:#fbfdff}.editSectionTitle{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}.editSectionTitle h3{margin:0 0 4px}.editSectionTitle p{margin:0;color:#66788a}.editEmployeeGrid{display:grid;grid-template-columns:180px minmax(0,1fr);gap:22px;align-items:start}.employeeEditPanel .photoBox{display:grid;gap:8px;min-width:0}.employeeEditPanel .photoPreview{width:180px;height:150px;max-width:100%}.employeeEditPanel .photoPreview img{display:block;width:100%;height:100%;object-fit:cover}.employeeEditPanel .fields{align-items:start}.employeeEditPanel .formActions{display:flex;justify-content:flex-end;margin-top:18px;padding-top:16px;border-top:1px solid #e4eaf0}.employeeEditPanel+.employeeProfileNav{margin-top:8px}@media(max-width:900px){.editEmployeeGrid{grid-template-columns:1fr}.employeeEditPanel .photoBox{max-width:220px}}@media(max-width:600px){.employeeEditPanel{padding:14px}.editSectionTitle{flex-direction:column}.employeeEditPanel .photoPreview{width:160px;height:130px}}
+
+/* 010u employee photo + reporting structure visibility */
+.profileIdentity{display:flex;align-items:center;gap:14px;min-width:0}
+.profilePhoto,.profilePhotoFallback{width:72px;height:72px;border-radius:14px;flex:0 0 72px;object-fit:cover;border:1px solid #d7e0ec;background:#f3f7fb}
+.profilePhotoFallback{display:grid;place-items:center;font-weight:800;font-size:22px;color:#536b88}
+.employeeEditPanel .photoPreview img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.employeeEditPanel .fields{align-content:start}
+@media(max-width:700px){.profileHead{align-items:flex-start}.profileIdentity{align-items:flex-start}.profilePhoto,.profilePhotoFallback{width:58px;height:58px;flex-basis:58px}}
+
+/* 010v: make reporting structure unmistakable in Employee Edit */
+.employeeEditPanel .orgStructureTitle{grid-column:1/-1;font-weight:800;font-size:16px;padding:10px 12px;background:#eef6ff;border:1px solid #cfe2fa;border-radius:9px;color:#234f7d}.employeeEditPanel .orgField{background:#f8fbff;border:1px solid #dce8f5;border-radius:9px;padding:10px}.employeeEditPanel .supervisorField{border-width:2px}.employeeEditPanel .orgField select,.employeeEditPanel .orgField input{width:100%}
+
+/* PMS plan activation validation */
+.planActivationArea{margin-top:18px;padding-top:16px;border-top:1px solid #e4eaf0}.planWeightStatus{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 14px;border-radius:10px;border:1px solid #d8e1eb;background:#f8fafc;margin-bottom:10px}.planWeightStatus span{font-weight:700;color:#506176}.planWeightStatus strong{font-size:18px}.planWeightStatus.ready{background:#edf8f3;border-color:#b9dfcf;color:#176b55}.planWeightStatus.notReady{background:#fff8e6;border-color:#f0d99a;color:#725717}.planInlineFeedback{padding:12px 14px;border-radius:10px;margin:10px 0;font-weight:700}.planInlineFeedback.error{background:#fff1f1;border:1px solid #efb8b8;color:#8a2c2c}.planInlineFeedback.success{background:#edf8f3;border:1px solid #b9dfcf;color:#176b55}
+
+/* 011a: system-wide action feedback */
+.toastNotice{position:fixed;top:20px;right:20px;z-index:10000;max-width:min(560px,calc(100vw - 40px));display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-radius:12px;box-shadow:0 12px 36px rgba(15,23,42,.22);font-weight:700;line-height:1.4;background:#fff;border:1px solid #cbd5e1;color:#0f172a}
+.toastSuccess{border-color:#86efac;background:#f0fdf4;color:#166534}
+.toastError{border-color:#fca5a5;background:#fef2f2;color:#991b1b}
+.toastMark{display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px;width:24px;height:24px;border-radius:999px;background:currentColor;color:#fff;font-size:14px}
+.toastMark::first-letter{color:#fff}
+.toastClose{margin-left:auto;border:0;background:transparent;color:inherit;font-size:24px;line-height:20px;padding:0 2px;cursor:pointer}
+@media(max-width:640px){.toastNotice{top:12px;left:12px;right:12px;max-width:none}}
+
+/* 011p: compact, supervisor-friendly PMS check-in workspace */
+.checkinTitleRow,.checkinSummaryHead,.checkinDetailHead{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}.checkinViewTabs{display:flex;gap:8px;flex-wrap:wrap}.checkinViewTabs button{background:#eef4fa;color:#25496f;border:1px solid #d6e2ef}.checkinViewTabs button.active{background:#1976d2;color:#fff;border-color:#1976d2}.checkinContextCompact{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;align-items:end;margin:18px 0}.compactReviewer{margin:0;min-height:44px}.checkinKpiSummary{border:1px solid #dce5ef;border-radius:16px;overflow:hidden;margin:18px 0;background:#fff}.checkinSummaryHead{padding:18px 20px;background:#f7f9fc;border-bottom:1px solid #e4eaf1}.checkinSummaryHead h4,.checkinSummaryHead h3{margin:0}.checkinKpiRow{display:grid;grid-template-columns:minmax(260px,2.1fr) minmax(150px,1fr) minmax(90px,.6fr) minmax(150px,1fr) 90px;gap:16px;align-items:center;padding:14px 20px;border-bottom:1px solid #e8edf3}.checkinKpiRow:last-child{border-bottom:0}.checkinKpiRow.open{background:#f0f7ff}.checkinKpiRow small{display:block;color:#657a96;margin-bottom:3px}.checkinKpiRow strong{display:block}.kpiIdentity small{margin-top:4px}.compactMeasureEntry>.panel{margin:0 0 18px}.checkinMeasureDetail{border:2px solid #d8e8f8}.checkinDetailHead{margin-bottom:12px}.checkinDetailHead .cellSub{display:block}.checkinSummaryForm{margin-top:18px;padding-top:18px;border-top:1px solid #e2e8f0}.verificationCompact{margin-top:24px;padding-top:18px;border-top:1px solid #e2e8f0}.checkinHistoryWorkspace{margin-top:20px}.checkinHistoryWorkspace .tableWrap{margin-top:16px}@media(max-width:900px){.checkinTitleRow,.checkinSummaryHead,.checkinDetailHead{flex-direction:column}.checkinContextCompact{grid-template-columns:1fr}.checkinKpiRow{grid-template-columns:1fr 1fr}.checkinKpiRow .kpiIdentity{grid-column:1/-1}.checkinKpiRow button{width:100%}}@media(max-width:560px){.checkinKpiRow{grid-template-columns:1fr}.checkinKpiRow .kpiIdentity{grid-column:auto}.checkinViewTabs{width:100%}.checkinViewTabs button{flex:1}}
+
+/* 011q: compact, phone-first check-in history and safer workspace sizing */
+.checkinWorkspace{max-width:100%;min-width:0;overflow:hidden}
+.checkinWorkspace>*{min-width:0}
+.checkinTitleRow>div:first-child{min-width:0;flex:1}
+.checkinViewTabs{flex:0 0 auto}
+.checkinHistoryCards{display:grid;gap:14px;margin-top:16px}
+.checkinHistoryCard{border:1px solid #dce5ef;border-radius:16px;background:#fff;padding:18px;min-width:0}
+.historyCardHead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.historyCardHead b{display:block;font-size:1.05rem}
+.historyCardHead small{display:block;color:#657a96;margin-top:4px}
+.historyStatus{border-radius:999px;padding:6px 10px;background:#eef4fa;font-weight:700;white-space:nowrap}
+.historyMetrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.historyMetrics>div{background:#f7f9fc;border:1px solid #e4eaf1;border-radius:12px;padding:12px}
+.historyMetrics small,.historyMetrics span,.historyNarrative small{display:block;color:#657a96}
+.historyMetrics strong{display:block;font-size:1.15rem;margin:3px 0}
+.historyNarrative{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;border-top:1px solid #e8edf3;padding-top:14px}
+.historyNarrative>div{min-width:0}
+.historyNarrative span{display:block;overflow-wrap:anywhere;margin-top:3px}
+@media(max-width:900px){
+ .checkinWorkspace{padding:16px}
+ .checkinTitleRow{width:100%}
+ .checkinViewTabs{width:100%;display:grid;grid-template-columns:1fr 1fr}
+ .checkinViewTabs button{width:100%;min-width:0}
+ .historyNarrative{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+ .checkinWorkspace{padding:12px}
+ .checkinTitleRow h3{font-size:1.2rem}
+ .checkinTitleRow .muted{font-size:.95rem}
+ .checkinViewTabs{grid-template-columns:1fr}
+ .checkinContextCompact{margin:12px 0}
+ .checkinSummaryHead{padding:14px}
+ .checkinKpiRow{padding:13px 14px;gap:10px}
+ .checkinHistoryCard{padding:14px}
+ .historyCardHead{flex-direction:column}
+ .historyMetrics{grid-template-columns:1fr}
+}
+
+/* 011s: application-owned dialogs replace browser alert/confirm/prompt UX */
+.actionDialog{width:min(520px,calc(100vw - 32px));max-width:520px}
+.actionDialog h3{margin-top:0}
+.actionDialog p{color:#5f7390;line-height:1.5}
+.actionDialog label{display:grid;gap:8px;margin-top:16px;font-weight:700}
+.actionDialog textarea{width:100%;min-height:110px;resize:vertical;box-sizing:border-box}
+.dialogHint{color:#b42318;font-weight:600}
+.dangerBtn{background:#b42318!important;border-color:#b42318!important;color:#fff!important}
+@media(max-width:560px){.actionDialog{width:calc(100vw - 24px);padding:18px}.actionDialog .modalActions{display:grid;grid-template-columns:1fr 1fr}.actionDialog .modalActions button{width:100%}}
+
+/* 011t Check-in summary/finalization */
+.checkinSummaryCompact{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 20px;margin:18px 0;border:1px solid #dce5ef;border-radius:16px;background:#f8fbff}.checkinSummaryCompact h4{margin:0 0 5px}.checkinSummaryCompact p{margin:0}.summaryCompactMeta{display:flex;gap:12px;flex:1;justify-content:center}.summaryCompactMeta span{min-width:130px;padding:10px 12px;border:1px solid #e1e8f0;border-radius:12px;background:#fff}.summaryCompactMeta small,.summaryCompactMeta b{display:block}.summaryCompactMeta small{color:#657a96;margin-bottom:3px}.checkinSummaryModal{width:min(900px,calc(100vw - 28px));max-height:90vh;overflow:auto;background:#fff;border-radius:18px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.22)}.checkinKpiSave{margin-top:16px}.checkinHistoryCard .historyCardHead small{display:block}.historyFinalized{font-size:.85rem;color:#657a96}@media(max-width:900px){.checkinSummaryCompact{align-items:stretch;flex-direction:column}.summaryCompactMeta{justify-content:flex-start;flex-wrap:wrap}.summaryCompactMeta span{flex:1 1 150px}.checkinSummaryCompact .formActions{width:100%}.checkinSummaryCompact .formActions button{flex:1}}@media(max-width:560px){.checkinSummaryModal{padding:16px}.summaryCompactMeta{display:grid;grid-template-columns:1fr}.checkinSummaryCompact .formActions{display:grid;grid-template-columns:1fr}.checkinSummaryCompact{padding:14px}}
+
+/* 011u Attendance Administration */
+.attendanceFilters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin:14px 0}.attendanceFilters label,.filePick{display:grid;gap:7px;font-weight:700}.filePick{max-width:520px;padding:14px;border:1px dashed #b8c8da;border-radius:12px;background:#f8fbff}.filePick input{margin-top:5px}@media(max-width:760px){.attendanceFilters{grid-template-columns:1fr}.recruitTabs{overflow-x:auto}.timeForm{grid-template-columns:1fr}.timeForm .wideField{grid-column:1}.panel{overflow-x:auto}}
+/* 012 Performance Intelligence */
+.intelligenceHero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr);gap:24px;align-items:center}.intelligenceMetrics{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.intelligenceMetrics div,.caseScores span{border:1px solid var(--border,#dbe3ee);border-radius:12px;padding:12px;background:var(--card,#fff)}.intelligenceMetrics b{display:block;font-size:24px}.intelligenceMetrics span,.caseScores small{color:var(--muted,#64748b)}.automationFlow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.automationFlow>div{padding:14px;border:1px solid var(--border,#dbe3ee);border-radius:12px}.automationFlow b,.automationFlow span{display:block}.automationFlow span{margin-top:6px;color:var(--muted,#64748b);font-size:13px}.intelligenceCaseGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}.intelligenceCase{border:1px solid var(--border,#dbe3ee);border-radius:14px;padding:16px;background:var(--card,#fff)}.caseScores{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}.caseScores b,.caseScores small{display:block}.caseNarrative p{margin:4px 0 12px}.caseNarrative small{font-weight:700;color:var(--muted,#64748b)}.exceptionTags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.exceptionTags span{font-size:12px;padding:5px 8px;border-radius:999px;background:#fff3cd;color:#7c5700;border:1px solid #ffe69c}
+@media(max-width:900px){.intelligenceHero,.intelligenceCaseGrid{grid-template-columns:1fr}.automationFlow{grid-template-columns:1fr 1fr}.caseScores{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.automationFlow{grid-template-columns:1fr}.intelligenceMetrics{grid-template-columns:1fr 1fr}.intelligenceCase{padding:12px}}
+
+/* 012b Performance Intelligence inbox / mobile participation */
+.piInbox{display:grid;gap:10px;margin-top:14px}.piInboxRow{display:grid;grid-template-columns:minmax(220px,2fr) repeat(4,minmax(105px,.7fr)) minmax(120px,.8fr) auto;gap:12px;align-items:center;border:1px solid #d9e3ef;border-radius:14px;padding:14px;background:#fff}.piInboxRow>div{display:flex;flex-direction:column}.piInboxRow small,.piDossier small{display:block;color:#60799c;margin-bottom:3px}.piInboxRow span{display:flex;flex-direction:column}.piSignal{padding:8px 10px;border-radius:999px;text-align:center;font-weight:700}.piSignal.ok{background:#e9f8f1;color:#176b51}.piSignal.warn{background:#fff4d7;color:#8b5a00}.piSignal.risk{background:#fdecec;color:#9b2c2c}.piDossier{margin-top:16px;border:1px solid #cfe0f2;border-radius:16px;padding:18px;background:#f9fbfe}.piTwoCol{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px}.employeeMobilePreview{display:flex;justify-content:center;padding:18px}.mobileCard{width:min(100%,430px);border:1px solid #cfe0f2;border-radius:24px;padding:22px;background:#fff;box-shadow:0 12px 32px rgba(23,52,86,.08)}.mobileFact{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #e6edf5}.mobileCard label{display:block;font-weight:700;margin-top:14px}.mobileCard textarea{width:100%;min-height:78px;margin-top:6px}.mobileCard button{width:100%;margin-top:16px}.preparedAssessment{margin-top:12px}
+@media(max-width:1000px){.piInboxRow{grid-template-columns:1fr 1fr 1fr}.piInboxRow>div{grid-column:1/-1}.piTwoCol{grid-template-columns:1fr}.piInboxRow button{width:100%}}
+@media(max-width:620px){.piInboxRow{grid-template-columns:1fr 1fr}.piInboxRow>div,.piInboxRow .piSignal,.piInboxRow button{grid-column:1/-1}.employeeMobilePreview{padding:4px}.mobileCard{border-radius:16px;padding:16px}.automationFlow{grid-template-columns:1fr!important}.intelligenceMetrics{grid-template-columns:1fr 1fr!important}}
+
+}
+
+/* Build 168 — HR/Payroll is rendered inside the native UniMIS dashboard shell. */
+.hrpayroll-native168{min-height:0;background:transparent;padding:0}
+.hrpayroll-native168 .native168-heading{display:flex;align-items:flex-start;justify-content:space-between;margin:0 0 20px}
+.hrpayroll-native168 .native168-heading h1{margin:8px 0 4px}
+.hrpayroll-native168 .native168-heading p{margin:0;color:#6b7b91}
+
+/* Build 178: show saved employee photos in employee list cards */
+.employeeCard .avatar{overflow:hidden;display:flex;align-items:center;justify-content:center}.employeeCard .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Build 183 — HR leave approval decision dialog */
+.approvalEmployee{display:flex;align-items:center;gap:10px}.approvalEmployee img,.approvalEmployee>span{width:38px;height:38px;border-radius:50%;object-fit:cover;display:grid;place-items:center;background:#e7eef9;color:#0b3d73;font-weight:800}.approvalEmployee div{display:grid}.approvalEmployee small{color:#64748b}
+.leaveDecisionModal{width:min(680px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:22px;box-shadow:0 28px 80px rgba(15,23,42,.32);padding:24px}.leaveDecisionHead{display:flex;justify-content:space-between;gap:18px}.leaveDecisionHead h3{font-size:25px;margin:7px 0 4px}.leaveDecisionHead p{margin:0;color:#64748b}.decisionBadge{font-size:11px;font-weight:900;letter-spacing:.08em;padding:5px 9px;border-radius:999px}.decisionBadge.approved{background:#dcfce7;color:#166534}.decisionBadge.rejected{background:#fee2e2;color:#991b1b}.modalClose{border:0;background:#eef3fa;width:38px;height:38px;border-radius:12px;font-size:24px;cursor:pointer}.decisionEmployeeCard{display:flex;align-items:center;gap:14px;padding:16px;margin:20px 0 14px;background:#f7faff;border:1px solid #dbe7f5;border-radius:16px}.decisionEmployeeCard img,.decisionAvatar{width:62px;height:62px;border-radius:50%;object-fit:cover}.decisionAvatar{display:grid;place-items:center;background:#dce9fa;color:#0b3d73;font-weight:900;font-size:20px}.decisionEmployeeCard h4{font-size:18px;margin:0 0 4px}.decisionEmployeeCard p{margin:0;color:#64748b}.decisionFacts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.decisionFacts>div{display:grid;gap:4px;background:#f8fafc;border:1px solid #e5eaf1;border-radius:12px;padding:12px}.decisionFacts small,.decisionReason small{color:#64748b}.decisionReason{margin:14px 0;padding:14px;border-left:4px solid #b9cce5;background:#f8fafc;border-radius:10px}.decisionReason p{margin:6px 0 0}.decisionComment{display:grid;gap:7px;font-weight:700}.decisionComment textarea{min-height:100px;resize:vertical;padding:12px;border:1px solid #bdcbe0;border-radius:12px;font:inherit}.dangerBtn{background:#b42318!important;color:#fff!important;border-color:#b42318!important}@media(max-width:650px){.leaveDecisionModal{padding:18px}.decisionFacts{grid-template-columns:1fr 1fr}.leaveDecisionHead h3{font-size:21px}.decisionEmployeeCard{align-items:flex-start}}
+
+/* Build 186: employee register photos + responsive report filters */
+.employeeCard .avatar{overflow:hidden;flex:0 0 auto}
+.employeeCard .avatar img{width:100%;height:100%;display:block;object-fit:cover;border-radius:inherit}
+.employeeSearchBar{flex-wrap:wrap;align-items:end}
+.employeeSearchBar input[type="date"]{min-width:145px}
+@media(max-width:900px){.employeeSearchBar{display:grid!important;grid-template-columns:1fr 1fr}.employeeSearchBar .searchCount{grid-column:1/-1}}
+@media(max-width:560px){.employeeSearchBar{grid-template-columns:1fr}}
+
+/* Build 187 */
+.nav-link-button{width:100%;border:0;text-align:left;font:inherit;cursor:pointer}

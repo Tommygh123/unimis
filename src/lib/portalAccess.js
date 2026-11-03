@@ -1,5 +1,5 @@
 import {supabase} from "./supabase";
-const STAFF_ROLES=new Set(["owner","auditor","admin","registrar","admissions_officer","finance_officer","hr_officer","payroll_officer","exam_officer","librarian","accommodation_officer","communications_officer","lecturer","staff"]);
+const STAFF_ROLES=new Set(["owner","auditor","admin","registrar","admissions_officer","finance_officer","hr_officer","payroll_officer","exam_officer","librarian","accommodation_officer","communications_officer","lecturer","staff","employee"]);
 export async function classifyPortalAccount(user){
  if(!user)return {kind:"guest",roles:[],memberships:[],applicant:null};
  const [m,a,operator]=await Promise.all([

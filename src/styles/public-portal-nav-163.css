@@ -1,0 +1,25 @@
+
+/* Build 163: professional public portal navigation */
+.public-quick-links{display:flex;gap:20px;align-items:center}
+.public-nav-dropdown{position:relative;display:flex;align-items:center}
+.public-nav-dropdown>button{
+  appearance:none;border:0;background:transparent;font:inherit;font-weight:700;
+  cursor:pointer;padding:14px 4px;display:flex;align-items:center;gap:6px;color:inherit
+}
+.public-nav-dropdown-menu{
+  position:absolute;top:calc(100% - 2px);left:0;min-width:220px;background:#fff;
+  border:1px solid rgba(15,48,86,.12);border-radius:12px;padding:8px;
+  box-shadow:0 16px 40px rgba(15,48,86,.16);display:none;z-index:80
+}
+.public-nav-dropdown.open .public-nav-dropdown-menu,
+.public-nav-dropdown:focus-within .public-nav-dropdown-menu{display:grid}
+.public-nav-dropdown-menu a{
+  display:block;padding:11px 12px;border-radius:8px;white-space:nowrap;text-decoration:none
+}
+.public-nav-dropdown-menu a:hover,.public-nav-dropdown-menu a:focus{background:#eef5ff}
+@media (max-width: 900px){
+  .public-quick-links{display:none}
+  .public-nav-dropdown{display:block;width:100%}
+  .public-nav-dropdown>button{width:100%;justify-content:space-between}
+  .public-nav-dropdown-menu{position:static;box-shadow:none;border:0;padding:4px 0 4px 14px;min-width:0}
+}

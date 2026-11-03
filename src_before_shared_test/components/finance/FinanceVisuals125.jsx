@@ -1,0 +1,14 @@
+import {chartSegments125,gaugeRatio125} from '../../lib/financeVisuals125';
+import '../../styles/finance-visuals-125.css';
+const colours=['#0f8a75','#d99124','#cd4b60','#4c69d5','#8d53bd','#238ca8','#a36839'];
+const money=x=>`GHS ${Number(x||0).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`;
+function point(angle,radius=100){const rad=angle*Math.PI/180;return [140+radius*Math.cos(rad),140+radius*Math.sin(rad)]}
+function arc(from,to){const a=point(from),b=point(to);return `M ${a.join(' ')} A 100 100 0 0 1 ${b.join(' ')}`}
+export function FinanceGauge125({title,value,total,note}){
+ const ratio=gaugeRatio125(value,total),bounded=Math.max(0,Math.min(100,ratio??0)),tip=point(180+bounded*1.8,81);
+ return <article className="finance-visual125"><h2>{title}</h2><svg className="finance-gauge125" viewBox="0 0 280 200" role="img" aria-label={`${title}: ${ratio===null?'No applicable data':ratio.toFixed(1)+' percent'}`}><path d={arc(180,252)} stroke="#cd4b60"/><path d={arc(252,306)} stroke="#d99124"/><path d={arc(306,360)} stroke="#0f8a75"/>{[0,25,50,75,100].map(value=>{const p=point(180+value*1.8,121);return <text x={p[0]} y={p[1]+4} key={value}>{value}</text>})}{ratio!==null&&<><line x1="140" y1="140" x2={tip[0]} y2={tip[1]} stroke="#183b57" strokeWidth="4"/><circle cx="140" cy="140" r="9" fill="#183b57"/></>}<text className="gauge-value125" x="140" y="178">{ratio===null?'No data':`${ratio.toFixed(1)}%`}</text></svg><p>{note}</p><div className="chart-basis125">{money(value)} / {money(total)}</div></article>
+}
+export function FinanceDonut125({title,items,note}){
+ const segments=chartSegments125(items),circumference=2*Math.PI*70;
+ return <article className="finance-visual125"><h2>{title}</h2><div className="finance-donut-layout125"><svg viewBox="0 0 200 200" role="img" aria-label={`${title}. ${segments.total?segments.items.map(x=>`${x.label}: ${money(x.value)}, ${(x.fraction*100).toFixed(1)} percent`).join('. '):'No data'}`}><circle cx="100" cy="100" r="70" fill="none" stroke="#e3eaf2" strokeWidth="28"/>{segments.items.map((x,i)=>x.value>0?<circle key={x.label} cx="100" cy="100" r="70" fill="none" stroke={x.colour||colours[i%colours.length]} strokeWidth="28" strokeDasharray={`${x.fraction*circumference} ${circumference}`} strokeDashoffset={-x.offset*circumference} transform="rotate(-90 100 100)"/>:null)}<text x="100" y="92" className="donut-label125">{segments.total?'TOTAL':'NO DATA'}</text><text x="100" y="114" className="donut-value125">{segments.total.toLocaleString(undefined,{maximumFractionDigits:2})}</text><text x="100" y="134" className="donut-label125">GHS</text></svg><ul>{segments.items.map((x,i)=><li key={x.label}><span style={{background:x.colour||colours[i%colours.length]}}/><div><b>{x.label}</b><small>{money(x.value)} • {(x.fraction*100).toFixed(1)}%</small></div></li>)}</ul></div><p>{note}</p></article>
+}

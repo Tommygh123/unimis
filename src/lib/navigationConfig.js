@@ -32,7 +32,13 @@ export const portalItems = {
   ],
   finance_officer: [
     { label: "Accounts Operations", path: "/finance/operations", icon: WalletCards, permission: "finance.view" },
+    { label: "Human Resources & Payroll", path: "/finance/payroll", icon: Banknote },
     { label: "Accounts Reports & Analytics", path: "/finance/reports", icon: WalletCards, permission: "finance.view" },
+  ],
+  accountant: [
+    { label: "Accounts Operations", path: "/finance/operations", icon: WalletCards },
+    { label: "Accounts Reports & Analytics", path: "/finance/reports", icon: WalletCards },
+    { label: "Human Resources & Payroll", path: "/finance/payroll", icon: Banknote },
   ],
   hr_officer: [
     { label: "Human Resources", path: "/hr", icon: UserRoundCog, permission: "hr.view" },

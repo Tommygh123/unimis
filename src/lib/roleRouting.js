@@ -1,17 +1,17 @@
 export const rolePriority = [
-  "owner", "auditor", "admin", "registrar", "admissions_officer", "finance_officer",
+  "owner", "auditor", "admin", "registrar", "admissions_officer", "finance_officer", "accountant",
   "procurement_officer", "hr_officer", "payroll_officer", "exam_officer", "communications_officer",
-  "librarian", "accommodation_officer", "lecturer", "staff", "student", "parent",
+  "librarian", "accommodation_officer", "lecturer", "staff", "employee", "student", "parent",
 ];
 
 export function portalForRole(code) {
   const portals = {
     academic_panel:"/academic-review",deputy_access_authority:"/access-authority",auditor: "/audit",owner: "/owner", admin: "/admin", registrar: "/registrar",
-    admissions_officer: "/admissions", finance_officer: "/finance",
+    admissions_officer: "/admissions", finance_officer: "/finance", accountant: "/finance",
     procurement_officer:"/procurement", hr_officer: "/hr", payroll_officer: "/payroll", exam_officer: "/exams",
     communications_officer: "/communications", librarian: "/library",
     accommodation_officer: "/accommodation", lecturer: "/lecturer",
-    staff: "/staff", student: "/student", parent: "/parent",
+    staff: "/staff", employee: "/employee-services", student: "/student", parent: "/parent",
   };
   return portals[code] || "/dashboard";
 }
