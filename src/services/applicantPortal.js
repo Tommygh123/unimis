@@ -3,7 +3,15 @@ const DOCUMENT_BUCKET = "admission-documents";
 const err = e => e ? (e instanceof Error ? e : new Error(e.message || "Something went wrong.")) : null;
 
 export async function loadApplicantPortalBootstrap(){
-  const {data,error}=await supabase.rpc("unimis_admissions_public_bootstrap");
+  // A university can publish a tenant-specific link such as /apply?institution=AFU.
+  // Existing applicants without a URL hint are resolved from their authenticated account.
+  const code = new URLSearchParams(window.location.search).get("institution")?.trim();
+  const {data,error}=code
+    ? await supabase.rpc("unimis_admissions_public_bootstrap_for",{p_institution_code:code})
+    : await supabase.rpc("unimis_admissions_public_bootstrap");
+  if(!error && !data?.institution){
+    return {data:null,error:new Error("No active university matches this admissions link.")};
+  }
   return {data:data||null,error:err(error)};
 }
 export async function loadApplicantDashboard(){
